@@ -1,8 +1,9 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Map } from "lucide-react";
 import type { QuizQuestionRaw, ShuffledRound } from "@/lib/quizTypes";
+import { CHOICE_PALETTE } from "@/lib/choicePalette";
 import { isCorrectAnswer, pickRandomQuestions, shuffleChoices } from "@/lib/quizLogic";
 import { playCorrectChime, playWrongBuzz } from "@/lib/playFeedbackSounds";
 import { useChoiceTapGuard } from "@/lib/useChoiceTapGuard";
@@ -72,8 +73,6 @@ export default function MannersMazeGame({ pool }: Props) {
   const questionNum = qIndex + 1;
   const overlayOpen = feedback !== null;
 
-  const labels = useMemo(() => ["いち", "に", "さん", "よん"] as const, []);
-
   if (phase === "goal") {
     return <GoalScreen onReplay={startNewPlay} />;
   }
@@ -113,23 +112,20 @@ export default function MannersMazeGame({ pool }: Props) {
           {current.question}
         </h2>
 
-        <div className="mt-6 grid grid-cols-1 gap-3 sm:gap-3.5">
+        <div className="mt-5 grid grid-cols-1 gap-4 sm:mt-6 sm:grid-cols-2 sm:gap-4 md:gap-5">
           {round.shuffledChoices.map((text, i) => {
             const di = i as 0 | 1 | 2 | 3;
-            const label = labels[i];
+            const pal = CHOICE_PALETTE[i];
             return (
               <button
                 key={`${qIndex}-${i}-${text}`}
                 type="button"
                 disabled={overlayOpen}
-                className="min-h-[3.25rem] w-full rounded-2xl border-4 border-sky-200 bg-gradient-to-b from-sky-50 to-sky-100 px-3 py-3 text-left text-base font-bold text-slate-800 shadow-md transition active:scale-[0.99] disabled:opacity-50 sm:min-h-[3.5rem] sm:text-lg"
-                aria-label={`せんたくし ${label}。${text}`}
+                className={`flex w-full min-h-[6.5rem] items-center justify-center rounded-3xl border-4 px-4 py-5 text-center text-lg font-extrabold leading-snug transition active:scale-[0.99] disabled:opacity-50 sm:min-h-[7.5rem] sm:px-5 sm:py-6 sm:text-xl ${pal.btn}`}
+                aria-label={`${pal.ariaChunk}。${text}`}
                 onTouchEnd={(e) => onTouchEnd(e, di)}
                 onClick={() => onClick(di)}
               >
-                <span className="mr-2 inline-flex h-8 w-8 items-center justify-center rounded-full bg-sky-500 text-sm text-white">
-                  {i + 1}
-                </span>
                 {text}
               </button>
             );
