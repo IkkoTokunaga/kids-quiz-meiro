@@ -80,14 +80,14 @@ export default function MannersMazeGame({ pool }: Props) {
 
   if (!current || !round) {
     return (
-      <div className="flex min-h-[100dvh] items-center justify-center text-lg font-bold text-white">
+      <div className="mx-auto flex min-h-[100dvh] w-full max-w-4xl items-center justify-center px-3 text-lg font-bold text-white sm:px-4">
         よみこみちゅう…
       </div>
     );
   }
 
   return (
-    <div className="relative flex min-h-[100dvh] flex-col px-3 pb-6 pt-4 sm:px-4">
+    <div className="relative mx-auto flex min-h-[100dvh] w-full max-w-4xl flex-col px-3 pb-6 pt-4 sm:px-4">
       <header className="mb-3 text-center">
         <div className="inline-flex items-center gap-2 rounded-full bg-white/25 px-4 py-2 shadow-sm backdrop-blur-sm">
           <Map className="h-7 w-7 text-amber-900" aria-hidden />

@@ -26,7 +26,7 @@ export function FeedbackOverlay({ open, variant, onClose }: Props) {
       aria-describedby="feedback-desc"
     >
       <div
-        className="relative w-full max-w-sm overflow-hidden rounded-3xl border-4 border-white bg-white p-6 text-center shadow-2xl"
+        className="relative w-full max-w-4xl overflow-hidden rounded-3xl border-4 border-white bg-white p-6 text-center shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
         <ConfettiBurst active={variant === "correct"} />
