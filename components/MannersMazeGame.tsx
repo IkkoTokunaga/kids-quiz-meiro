@@ -1,10 +1,11 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { Map } from "lucide-react";
 import type { QuizQuestionRaw, ShuffledRound } from "@/lib/quizTypes";
 import { CHOICE_PALETTE } from "@/lib/choicePalette";
 import { isCorrectAnswer, pickRandomQuestions, shuffleChoices } from "@/lib/quizLogic";
+import { advanceAfterCorrect } from "@/lib/quizSessionProgress";
 import { playCorrectChime, playWrongBuzz } from "@/lib/playFeedbackSounds";
 import { useChoiceTapGuard } from "@/lib/useChoiceTapGuard";
 import { PathTrack } from "./PathTrack";
@@ -19,21 +20,24 @@ type Props = {
 export default function MannersMazeGame({ pool, quizTitle }: Props) {
   const [phase, setPhase] = useState<"quiz" | "goal">("quiz");
   const [questions, setQuestions] = useState<QuizQuestionRaw[]>(() => pickRandomQuestions(pool, 10));
-  const [qIndex, setQIndex] = useState(0);
   const [progress, setProgress] = useState(0);
   const [round, setRound] = useState<ShuffledRound | null>(null);
   const [feedback, setFeedback] = useState<null | "correct" | "wrong">(null);
+  /** オーバーレイの種類・進捗はイベント内で最新値を読む（Strict Mode の updater 二重実行と無関係にする） */
+  const feedbackRef = useRef<null | "correct" | "wrong">(null);
+  const progressRef = useRef(0);
+  feedbackRef.current = feedback;
+  progressRef.current = progress;
 
-  const current = questions[qIndex];
+  const current = progress < 10 ? questions[progress] : undefined;
 
   useEffect(() => {
     if (phase !== "quiz" || !current) return;
     setRound(shuffleChoices(current.choices));
-  }, [phase, qIndex, current]);
+  }, [phase, progress, current]);
 
   const startNewPlay = useCallback(() => {
     setQuestions(pickRandomQuestions(pool, 10));
-    setQIndex(0);
     setProgress(0);
     setPhase("quiz");
     setFeedback(null);
@@ -58,20 +62,16 @@ export default function MannersMazeGame({ pool, quizTitle }: Props) {
   const { onTouchEnd, onClick } = useChoiceTapGuard(handlePick);
 
   const closeFeedback = useCallback(() => {
-    setFeedback((prev) => {
-      if (prev === "correct") {
-        setProgress((p) => {
-          const next = p + 1;
-          if (next >= 10) setPhase("goal");
-          else setQIndex((i) => i + 1);
-          return next;
-        });
-      }
-      return null;
-    });
+    const wasCorrect = feedbackRef.current === "correct";
+    setFeedback(null);
+    if (!wasCorrect) return;
+    const { next, goal } = advanceAfterCorrect(progressRef.current);
+    if (goal) setPhase("goal");
+    setProgress(next);
   }, []);
 
-  const questionNum = qIndex + 1;
+  /** いま解いているもんだい番号（1〜10）。進捗バーと常に一致 */
+  const questionNum = progress + 1;
   const overlayOpen = feedback !== null;
 
   if (phase === "goal") {
@@ -119,7 +119,7 @@ export default function MannersMazeGame({ pool, quizTitle }: Props) {
             const pal = CHOICE_PALETTE[i];
             return (
               <button
-                key={`${qIndex}-${i}-${text}`}
+                key={`${progress}-${i}-${text}`}
                 type="button"
                 disabled={overlayOpen}
                 className={`flex w-full min-h-[6.5rem] items-center justify-center rounded-3xl border-4 px-4 py-5 text-center text-lg font-extrabold leading-snug transition active:scale-[0.99] disabled:opacity-50 sm:min-h-[7.5rem] sm:px-5 sm:py-6 sm:text-xl ${pal.btn}`}
