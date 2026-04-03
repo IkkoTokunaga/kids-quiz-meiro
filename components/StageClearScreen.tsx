@@ -26,7 +26,7 @@ export function StageClearScreen({ clearedStage, onPlayFromStart, onNextStage }:
       aria-labelledby={titleId}
       aria-describedby={descId}
     >
-      <div className="relative w-full max-w-4xl overflow-hidden rounded-[2rem] border-4 border-white bg-white/95 p-8 shadow-2xl">
+      <div className="relative w-full max-w-7xl overflow-hidden rounded-[2rem] border-4 border-white bg-white/95 px-6 py-10 shadow-2xl sm:px-10 sm:py-12 md:px-14 md:py-14">
         <ConfettiBurst active />
         <div className="relative z-20 flex flex-col items-center">
           <Sparkles className="h-16 w-16 text-amber-500" strokeWidth={2} aria-hidden />

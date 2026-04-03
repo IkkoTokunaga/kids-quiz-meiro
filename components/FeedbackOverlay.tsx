@@ -21,7 +21,7 @@ export function FeedbackOverlay({ open, variant, wrongHint, onClose }: Props) {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center overflow-hidden p-3 sm:p-4"
+      className="fixed inset-0 z-50 flex items-center justify-center overflow-hidden p-4 sm:p-6 md:p-8"
       role="dialog"
       aria-modal="true"
       aria-labelledby="feedback-title"
@@ -78,7 +78,7 @@ export function FeedbackOverlay({ open, variant, wrongHint, onClose }: Props) {
 
       <div
         className={[
-          "relative z-[60] w-full max-w-4xl overflow-hidden rounded-3xl border-4 p-6 text-center shadow-2xl sm:p-8",
+          "relative z-[60] w-full max-w-7xl overflow-hidden rounded-3xl border-4 px-5 py-10 text-center shadow-2xl sm:px-8 sm:py-12 md:px-12 md:py-14",
           isCorrect
             ? "animate-feedback-correct-pop border-amber-200 bg-gradient-to-b from-amber-50 via-yellow-100 to-amber-100 shadow-[0_0_0_4px_rgba(251,191,36,0.5),0_0_80px_rgba(250,204,21,0.75),0_25px_50px_rgba(245,158,11,0.35)]"
             : "border-red-600 bg-gradient-to-b from-red-100 to-rose-200 shadow-[0_0_0_3px_rgba(220,38,38,0.4),0_20px_40px_rgba(0,0,0,0.35)]",
@@ -119,7 +119,7 @@ export function FeedbackOverlay({ open, variant, wrongHint, onClose }: Props) {
         <button
           type="button"
           className={[
-            "relative z-20 mt-8 min-h-[3rem] w-full rounded-2xl px-4 py-3 text-lg font-bold shadow-lg active:scale-[0.98] sm:mt-10 sm:min-h-[3.25rem] sm:text-xl",
+            "relative z-20 mt-10 min-h-[3rem] w-full rounded-2xl px-4 py-3 text-lg font-bold shadow-lg active:scale-[0.98] sm:mt-12 sm:min-h-[3.25rem] sm:text-xl",
             isCorrect
               ? "bg-gradient-to-r from-amber-500 via-yellow-400 to-orange-500 text-amber-950 ring-4 ring-amber-200/80"
               : "bg-gradient-to-r from-red-600 to-rose-700 text-white ring-4 ring-red-300/50",
