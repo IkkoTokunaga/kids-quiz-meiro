@@ -312,7 +312,7 @@
       },
       {
         "questionNumber": 79,
-        "question": "「あおい、あか、あ…」 つぎは なに？",
+        "question": "「あか、あらいぐま、あんこ、あ…」 つぎは なに？",
         "answerOptions": [
           { "text": "あひる", "rationale": "すべて 「あ」から はじまる ことばを あつめています。", "isCorrect": true },
           { "text": "いか", "rationale": "「い」から はじまっては いません。", "isCorrect": false },
@@ -356,7 +356,7 @@
       },
       {
         "questionNumber": 83,
-        "question": "「さる、きりん、ぞう」 なかまはずれは どれ？",
+        "question": "「さる、きりん、ぞう、りんご」 なかまはずれは どれ？",
         "answerOptions": [
           { "text": "りんご", "rationale": "ほかは どうぶつですが、りんごは たべものです。", "isCorrect": true },
           { "text": "さる", "rationale": "さるは どうぶつなので なかまです。", "isCorrect": false },
@@ -422,7 +422,7 @@
       },
       {
         "questionNumber": 89,
-        "question": "「パン、ごはん、ラーメン」 なかまはずれは どれ？",
+        "question": "「パン、ごはん、ラーメン、えんぴつ」 なかまはずれは どれ？",
         "answerOptions": [
           { "text": "えんぴつ", "rationale": "ほかは たべものですが、えんぴつは どうぐです。", "isCorrect": true },
           { "text": "パン", "rationale": "パンは たべものなので なかまです。", "isCorrect": false },

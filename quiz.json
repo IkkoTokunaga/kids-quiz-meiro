@@ -4,7 +4,7 @@
     "questions": [
       {
         "questionNumber": 1,
-        "question": "あつい「ひ（か）」に、おみずを かけると、どうなるかな？",
+        "question": "あつい「ひ」に、おみずを かけると、どうなるかな？",
         "answerOptions": [
           { "text": "ひが きえる", "rationale": "みずは ひを ひやす ちからが あるからです。", "isCorrect": true },
           { "text": "ひが おおきくなる", "rationale": "ふつうは みずで ひが おおきくなることは ありません。", "isCorrect": false },
@@ -26,7 +26,7 @@
       },
       {
         "questionNumber": 3,
-        "question": "おそとで だいけがを して うごけないとき、たすけに きてくれる くるまは なに？",
+        "question": "おそとで おおけがを して うごけないとき、たすけに きてくれる くるまは なに？",
         "answerOptions": [
           { "text": "パトカー", "rationale": "パトカーは けいさつかんが のる くるまです。", "isCorrect": false },
           { "text": "きゅうきゅうしゃ", "rationale": "けがや びょうきの ひとを びょういんに はこびます。", "isCorrect": true },
@@ -125,7 +125,7 @@
       },
       {
         "questionNumber": 12,
-        "question": "おはなを かんだ ティッシュは、どこに すてる？",
+        "question": "はなを かんだ ティッシュは、どこに すてる？",
         "answerOptions": [
           { "text": "みちばた", "rationale": "みちに ごみを すてるのは いけないことです。", "isCorrect": false },
           { "text": "ごみばこ", "rationale": "ごみは かならず ごみばこに いれましょう。", "isCorrect": true },
