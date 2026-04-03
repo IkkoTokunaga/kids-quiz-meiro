@@ -87,7 +87,7 @@ export default function MannersMazeGame({ pool, quizTitle }: Props) {
   }
 
   return (
-    <div className="relative mx-auto flex min-h-[100dvh] w-full max-w-4xl flex-col px-3 pb-6 pt-4 sm:px-4">
+    <div className="relative mx-auto flex min-h-[100dvh] w-full max-w-4xl flex-col px-3 pb-[calc(1.75rem+env(safe-area-inset-bottom,0px))] pt-4 sm:px-4 sm:pb-6">
       <header className="mb-3 text-center">
         <div className="inline-flex items-center gap-2 rounded-full bg-white/25 px-4 py-2 shadow-sm backdrop-blur-sm">
           <Map className="h-7 w-7 text-amber-900" aria-hidden />
@@ -104,16 +104,16 @@ export default function MannersMazeGame({ pool, quizTitle }: Props) {
 
       <section
         aria-label="もんだい"
-        className="flex flex-1 flex-col rounded-3xl border-4 border-white/80 bg-white/95 p-4 shadow-xl sm:p-5"
+        className="flex min-h-0 flex-col rounded-3xl border-4 border-white/80 bg-white/95 p-3 pb-4 shadow-xl max-sm:mb-1 sm:flex-1 sm:p-5 sm:pb-5"
       >
         <p className="text-center text-sm font-bold text-sky-700">
           もんだい {questionNum} / 10
         </p>
-        <h2 className="mt-3 min-h-[3.5rem] text-center text-lg font-extrabold leading-snug text-slate-800 sm:text-xl">
+        <h2 className="mt-2 min-h-[2.75rem] text-center text-lg font-extrabold leading-snug text-slate-800 sm:mt-3 sm:min-h-[3.5rem] sm:text-xl">
           {current.question}
         </h2>
 
-        <div className="mt-5 grid grid-cols-1 gap-4 sm:mt-6 sm:grid-cols-2 sm:gap-4 md:gap-5">
+        <div className="mt-4 grid grid-cols-1 gap-3 sm:mt-6 sm:grid-cols-2 sm:gap-4 md:gap-5">
           {round.shuffledChoices.map((text, i) => {
             const di = i as 0 | 1 | 2 | 3;
             const pal = CHOICE_PALETTE[i];
@@ -122,7 +122,7 @@ export default function MannersMazeGame({ pool, quizTitle }: Props) {
                 key={`${progress}-${i}-${text}`}
                 type="button"
                 disabled={overlayOpen}
-                className={`flex w-full min-h-[6.5rem] items-center justify-center rounded-3xl border-4 px-4 py-5 text-center text-lg font-extrabold leading-snug transition active:scale-[0.99] disabled:opacity-50 sm:min-h-[7.5rem] sm:px-5 sm:py-6 sm:text-xl ${pal.btn}`}
+                className={`flex w-full min-h-[5.5rem] items-center justify-center rounded-3xl border-4 px-3 py-4 text-center text-base font-extrabold leading-snug transition active:scale-[0.99] disabled:opacity-50 sm:min-h-[7.5rem] sm:px-5 sm:py-6 sm:text-xl ${pal.btn}`}
                 aria-label={`${pal.ariaChunk}。${text}`}
                 onTouchEnd={(e) => onTouchEnd(e, di)}
                 onClick={() => onClick(di)}

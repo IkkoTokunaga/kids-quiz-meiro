@@ -5,7 +5,7 @@ export default function Page() {
   const { quizTitle, questions: pool } = loadQuizBundleFromFile();
 
   return (
-    <div className="relative min-h-[100dvh] overflow-x-hidden bg-gradient-to-b from-sky-400 via-sky-200 to-lime-200">
+    <div className="relative min-h-[100dvh] overflow-x-clip bg-gradient-to-b from-sky-400 via-sky-200 to-lime-200">
       <div
         className="pointer-events-none absolute left-[6%] top-10 h-14 w-24 rounded-full bg-white/70 blur-[1px] animate-cloud-drift"
         aria-hidden
