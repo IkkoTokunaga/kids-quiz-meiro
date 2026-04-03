@@ -125,9 +125,9 @@ export function FeedbackOverlay({ open, variant, wrongHint, onClose }: Props) {
               : "bg-gradient-to-r from-red-600 to-rose-700 text-white ring-4 ring-red-300/50",
           ].join(" ")}
           onClick={onClose}
-          aria-label="とじる"
+          aria-label={isCorrect ? "つぎへ" : "とじる"}
         >
-          とじる
+          {isCorrect ? "つぎへ" : "とじる"}
         </button>
       </div>
     </div>
