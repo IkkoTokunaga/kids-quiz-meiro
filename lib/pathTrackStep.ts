@@ -9,3 +9,18 @@ export function clampProgress(progress: number): number {
 export function isStepFilled(progress: number, stepIndex: number): boolean {
   return clampProgress(progress) > stepIndex;
 }
+
+/** 帯状トラックの塗り幅用。0 マスは null（未塗装） */
+export function filledTrackBackground(clampedProgress: number): string | null {
+  const n = clampProgress(clampedProgress);
+  if (n <= 0) return null;
+  if (n === 1) {
+    const h = STEP_HUES[0];
+    return `hsl(${h} 78% 62%)`;
+  }
+  const parts = STEP_HUES.slice(0, n).map((hue, i) => {
+    const p = (i / (n - 1)) * 100;
+    return `hsl(${hue} 78% 62%) ${p}%`;
+  });
+  return `linear-gradient(to right, ${parts.join(", ")})`;
+}
