@@ -14,6 +14,6 @@ export const CHOICE_PALETTE = [
   },
   {
     ariaChunk: "きいろい ボタン",
-    btn: "border-amber-600 bg-yellow-400 text-slate-900 shadow-md shadow-amber-700/20",
+    btn: "border-amber-900/85 bg-amber-500 text-white shadow-md shadow-amber-950/25 ring-1 ring-amber-950/15",
   },
 ] as const;
