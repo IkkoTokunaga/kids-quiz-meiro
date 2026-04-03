@@ -4,14 +4,14 @@
     "questions": [
       {
         "questionNumber": 1,
-        "question": "あつい「ひ（火）」に、おみずを かけると、どうなるかな？",
+        "question": "あつい「ひ（か）」に、おみずを かけると、どうなるかな？",
         "answerOptions": [
           { "text": "ひが きえる", "rationale": "みずは ひを ひやす ちからが あるからです。", "isCorrect": true },
           { "text": "ひが おおきくなる", "rationale": "ふつうは みずで ひが おおきくなることは ありません。", "isCorrect": false },
           { "text": "こおりに なる", "rationale": "あついところでは こおりには なりません。", "isCorrect": false },
           { "text": "なにも おきない", "rationale": "みずを かけると かならず なにか おきます。", "isCorrect": false }
         ],
-        "hint": "お料理のあとの、熱いフライパンに水をかけるシーンを思い出してね。"
+        "hint": "おりょうりの あとの、あつい フライパンに みずを かける シーンを おもいだしてね。"
       },
       {
         "questionNumber": 2,
@@ -22,7 +22,7 @@
           { "text": "もっと あかるく する", "rationale": "だれも いないなら あかるくする ひつようは ありません。", "isCorrect": false },
           { "text": "こわす", "rationale": "ものを こわすのは とても いけないことです。", "isCorrect": false }
         ],
-        "hint": "地球にやさしい「もったいない」の気持ちで考えてみよう。"
+        "hint": "ちきゅうに やさしい「もったいない」の きもちで かんがえてみよう。"
       },
       {
         "questionNumber": 3,
@@ -33,7 +33,7 @@
           { "text": "タクシー", "rationale": "タクシーは おかねを はらって のる くるまです。", "isCorrect": false },
           { "text": "バス", "rationale": "バスは たくさんの ひとを はこぶ くるまです。", "isCorrect": false }
         ],
-        "hint": "白くて赤い線が入った、ピーポーピーポーと鳴る車だよ。"
+        "hint": "しろくて あかい せんが はいった、ピーポーピーポーと なる くるまだよ。"
       },
       {
         "questionNumber": 4,
@@ -44,7 +44,7 @@
           { "text": "ねる", "rationale": "たべるまえに ねると ごはんが たべられません。", "isCorrect": false },
           { "text": "おふろに はいる", "rationale": "おふろよりも まずは おててを あらいましょう。", "isCorrect": false }
         ],
-        "hint": "おててを石鹸できれいにする、あのことだよ。"
+        "hint": "おててを せっけんで きれいにする、あの ことだよ。"
       },
       {
         "questionNumber": 5,
@@ -55,7 +55,7 @@
           { "text": "ゆっくり わたる", "rationale": "ゆっくりでも あかのときは わたってはいけません。", "isCorrect": false },
           { "text": "おどる", "rationale": "みちで おどるのは あぶないです。", "isCorrect": false }
         ],
-        "hint": "道路を渡る時の大事な約束だよ。"
+        "hint": "どうろを わたる ときの だいじな やくそくだよ。"
       },
       {
         "questionNumber": 6,
@@ -66,7 +66,7 @@
           { "text": "アイスを たべる", "rationale": "ねるまえに あまいものを たべると むしばに なりやすいです。", "isCorrect": false },
           { "text": "おそとで あそぶ", "rationale": "よるは くらいので おそとは あぶないです。", "isCorrect": false }
         ],
-        "hint": "お口の中をピカピカにする習慣だよ。"
+        "hint": "おくちの なかを ピカピカに する しゅうかんだよ。"
       },
       {
         "questionNumber": 7,
@@ -77,7 +77,7 @@
           { "text": "なげる", "rationale": "おもちゃを なげると こわれてしまいます。", "isCorrect": false },
           { "text": "いらない", "rationale": "借りたいときは、正直に言いましょう。", "isCorrect": false }
         ],
-        "hint": "優しくお願いする時の言葉だよ。"
+        "hint": "やさしく おねがいする ときの ことばだよ。"
       },
       {
         "questionNumber": 8,
@@ -88,7 +88,7 @@
           { "text": "おそとを はしる", "rationale": "うごくと ちが とまりにくくなります。", "isCorrect": false },
           { "text": "わらう", "rationale": "わらっても はなぢは とまりません。", "isCorrect": false }
         ],
-        "hint": "静かに座って、鼻をギュッとするんだよ。"
+        "hint": "しずかに すわって、はなを ギュッと するんだよ。"
       },
       {
         "questionNumber": 9,
@@ -99,7 +99,7 @@
           { "text": "しなものを みる", "rationale": "みるのは いいですが、やさしく みましょう。", "isCorrect": false },
           { "text": "こんにちはと いう", "rationale": "あいさつを するのは いいことです。", "isCorrect": false }
         ],
-        "hint": "他のお客さんに迷惑がかかることはどれかな？"
+        "hint": "ほかの おきゃくさんに めいわくが かかる ことは どれかな？"
       },
       {
         "questionNumber": 10,
@@ -110,7 +110,7 @@
           { "text": "なげる", "rationale": "おゆが こぼれて とても あぶないです。", "isCorrect": false },
           { "text": "のぞきこむ", "rationale": "ゆげで やけどを するかも しれないので ちかづきすぎないでね。", "isCorrect": false }
         ],
-        "hint": "触ると「アチッ！」となるよ。"
+        "hint": "さわると「アチッ！」と なるよ。"
       },
       {
         "questionNumber": 11,
@@ -121,7 +121,7 @@
           { "text": "タオル", "rationale": "タオルでは やわらかすぎて あたまを まもれません。", "isCorrect": false },
           { "text": "おめん", "rationale": "おめんは かおを かくすもので、あたまは まもれません。", "isCorrect": false }
         ],
-        "hint": "硬くて丈夫な、かぶりものだよ。"
+        "hint": "かたくて じょうぶな、かぶりものだよ。"
       },
       {
         "questionNumber": 12,
@@ -132,7 +132,7 @@
           { "text": "ぽけっと", "rationale": "ぽけっとが よごれてしまうので ごみばこに すてましょう。", "isCorrect": false },
           { "text": "つくえの うえ", "rationale": "まわりが きたなくなるので よくありません。", "isCorrect": false }
         ],
-        "hint": "使った後のゴミを捨てる場所は決まっているね。"
+        "hint": "つかった あとの ゴミを すてる ばしょは きまっているね。"
       },
       {
         "questionNumber": 13,
@@ -143,7 +143,7 @@
           { "text": "はさみ", "rationale": "はさみは かみを きる 道具です。", "isCorrect": false },
           { "text": "めがね", "rationale": "めがねは めを よくするための ものです。", "isCorrect": false }
         ],
-        "hint": "広げて頭の上にかざすものだよ。"
+        "hint": "ひろげて あたまの うえに かざすものだよ。"
       },
       {
         "questionNumber": 14,
@@ -154,18 +154,18 @@
           { "text": "さようなら", "rationale": "かえるときに つかう あいさつです。", "isCorrect": false },
           { "text": "いただきます", "rationale": "ごはんを たべるときに つかう あいさつです。", "isCorrect": false }
         ],
-        "hint": "部屋に入る時の礼儀正しい挨拶だよ。"
+        "hint": "へやに はいる ときの れいぎ ただしい あいさつだよ。"
       },
       {
         "questionNumber": 15,
         "question": "はさみを おともだちに わたすとき、どこを もって わたす？",
         "answerOptions": [
-          { "text": "は（刃）のところ", "rationale": "自分が刃を持って、相手に持ち手を向けるのが安全です。", "isCorrect": true },
+          { "text": "は（やいば）のところ", "rationale": "自分が刃を持って、相手に持ち手を向けるのが安全です。", "isCorrect": true },
           { "text": "もつところ", "rationale": "相手に刃を向けると、刺さってしまうかもしれず危ないです。", "isCorrect": false },
           { "text": "なげる", "rationale": "はさみを なげるのは とても あぶないです。", "isCorrect": false },
           { "text": "ふりまわす", "rationale": "まわりの ひとを けがさせてしまいます。", "isCorrect": false }
         ],
-        "hint": "尖った方を相手に向けないように渡そう。"
+        "hint": "とがった ほうを あいてに むけないように わたそう。"
       },
       {
         "questionNumber": 16,
@@ -176,11 +176,11 @@
           { "text": "マスク", "rationale": "マスクは くちや はなを おおうものです。", "isCorrect": false },
           { "text": "ぼうし", "rationale": "ぼうしは あたまに かぶるものです。", "isCorrect": false }
         ],
-        "hint": "指が5本分かれているタイプもあるよ。"
+        "hint": "ゆびが 5 ほんに わかれている タイプも あるよ。"
       },
       {
         "questionNumber": 17,
-        "question": "しらない ひとに 「おかしを あげるから おいで」と 言われたら？",
+        "question": "しらない ひとに 「おかしを あげるから おいで」と いわれたら？",
         "answerOptions": [
           { "text": "ついていく", "rationale": "しらない ひとに ついていくのは とても あぶないです。", "isCorrect": false },
           { "text": "いかない（ことわる）", "rationale": "しらない ひとには ついていかないのが おやくそくです。", "isCorrect": true },
@@ -198,18 +198,18 @@
           { "text": "おかずを つかむ", "rationale": "おはしの 正しい つかいかたです。", "isCorrect": false },
           { "text": "きれいに もつ", "rationale": "きれいに もてるのは すてきなことです。", "isCorrect": false }
         ],
-        "hint": "お箸は食べ物を運ぶためのものだよね。"
+        "hint": "おはしは たべものを はこぶ ための ものだよね。"
       },
       {
         "questionNumber": 19,
         "question": "としょかんの なかで、してはいけない ことは なに？",
         "answerOptions": [
-          { "text": "しずかに 本を よむ", "rationale": "としょかんは 本を よむところなので せいかいです。", "isCorrect": false },
+          { "text": "しずかに ほんを よむ", "rationale": "としょかんは 本を よむところなので せいかいです。", "isCorrect": false },
           { "text": "おおきな こえで しゃべる", "rationale": "ほかの ひとが 本を よめなくなるので いけません。", "isCorrect": true },
-          { "text": "きれいに 本を かえす", "rationale": "みんなの 本なので きれいに つかうのは いいことです。", "isCorrect": false },
+          { "text": "きれいに ほんを かえす", "rationale": "みんなの 本なので きれいに つかうのは いいことです。", "isCorrect": false },
           { "text": "しずかに あるく", "rationale": "としょかんでは 足音をたてないのがマナーです。", "isCorrect": false }
         ],
-        "hint": "みんなが集中して本を読んでいる場所だよ。"
+        "hint": "みんなが しゅうちゅうして ほんを よんでいる ばしょだよ。"
       },
       {
         "questionNumber": 20,
@@ -220,7 +220,7 @@
           { "text": "ねころぶ", "rationale": "ゆっくり 休むのは いいことです。", "isCorrect": false },
           { "text": "テレビを みる", "rationale": "テレビを みても はなぢは でません。", "isCorrect": false }
         ],
-        "hint": "鼻に刺激を与えないようにしよう。"
+        "hint": "はなに しげきを あたえないように しよう。"
       },
       {
         "questionNumber": 21,
@@ -231,7 +231,7 @@
           { "text": "しんぶんしを つかう", "rationale": "トイレが つまってしまうので いけません。", "isCorrect": false },
           { "text": "たべる", "rationale": "かみは たべるものでは ありません。", "isCorrect": false }
         ],
-        "hint": "次の人が困らないように考えてみよう。"
+        "hint": "つぎの ひとが こまらないように かんがえてみよう。"
       },
       {
         "questionNumber": 22,
@@ -242,7 +242,7 @@
           { "text": "プールで およぐ", "rationale": "みずの なかは かみなりが つたわりやすいので あぶないです。", "isCorrect": false },
           { "text": "かさを さして たつ", "rationale": "たかい ものに おちやすいので かさを さすのも あぶないです。", "isCorrect": false }
         ],
-        "hint": "広場や高い木の近くからは離れよう。"
+        "hint": "ひろばや たかい きの ちかくから はなれよう。"
       },
       {
         "questionNumber": 23,
@@ -253,7 +253,7 @@
           { "text": "いただきます", "rationale": "ごはんを たべるときに いう ことばです。", "isCorrect": false },
           { "text": "ごちそうさま", "rationale": "ごはんを たべおわったときに いう ことばです。", "isCorrect": false }
         ],
-        "hint": "1日の始まりの挨拶だよ。"
+        "hint": "1 にちの はじまりの あいさつだよ。"
       },
       {
         "questionNumber": 24,
@@ -264,7 +264,7 @@
           { "text": "わっはっは", "rationale": "わらうと おともだちが かなしみます。", "isCorrect": false },
           { "text": "しらないよ", "rationale": "知らんぷりをするのは いけないことです。", "isCorrect": false }
         ],
-        "hint": "素直な気持ちで謝ろう。"
+        "hint": "すなおな きもちで あやまろう。"
       },
       {
         "questionNumber": 25,
@@ -275,7 +275,7 @@
           { "text": "ゆっくりなら いい", "rationale": "ゆっくりでも ころんだら あぶないです。", "isCorrect": false },
           { "text": "おともだちと なら いい", "rationale": "おともだちにも けがを させるかも しれません。", "isCorrect": false }
         ],
-        "hint": "尖ったものを持っている時は慎重に。"
+        "hint": "とがった ものを もっている ときは しんちょうに。"
       },
       {
         "questionNumber": 26,
@@ -286,7 +286,7 @@
           { "text": "かわの なか", "rationale": "おさかなが こまったり、みずが よごれたりします。", "isCorrect": false },
           { "text": "おふろ", "rationale": "おふろに ごみを いれると おゆが きたなくなります。", "isCorrect": false }
         ],
-        "hint": "街や自然を汚さないようにしよう。"
+        "hint": "まちや しぜんを よごさないように しよう。"
       },
       {
         "questionNumber": 27,
@@ -297,7 +297,7 @@
           { "text": "そのまま はしる", "rationale": "ゆかが ぬれて すべりやすくなるので あぶないです。", "isCorrect": false },
           { "text": "おふろの なかで ねる", "rationale": "おぼれてしまうかも しれないので あぶないです。", "isCorrect": false }
         ],
-        "hint": "タオルを使って水を吸い取るよ。"
+        "hint": "タオルを つかって みずを すいとるよ。"
       },
       {
         "questionNumber": 28,
@@ -308,7 +308,7 @@
           { "text": "かくす", "rationale": "くつが なくなると おそとに でられません。", "isCorrect": false },
           { "text": "かたほうだけ はく", "rationale": "ぬいだら 両方きれいに ならべましょう。", "isCorrect": false }
         ],
-        "hint": "玄関をきれいに保つ工夫だよ。"
+        "hint": "げんかんを きれいに たもつ くふうだよ。"
       },
       {
         "questionNumber": 29,
@@ -319,7 +319,7 @@
           { "text": "ねる", "rationale": "みちの まん中で ねるのは ぜったいに いけません。", "isCorrect": false },
           { "text": "うしろを むいて あるく", "rationale": "まえを みないと ころんだり ぶつかったり します。", "isCorrect": false }
         ],
-        "hint": "「あお」になっても、油断しちゃダメだよ。"
+        "hint": "「あお」に なっても、ゆだんしちゃ だめだよ。"
       },
       {
         "questionNumber": 30,
@@ -330,7 +330,7 @@
           { "text": "だれにも いわない", "rationale": "がまんすると もっと いたくなるかも しれません。", "isCorrect": false },
           { "text": "かべ", "rationale": "かべに 話しても 治してくれません。", "isCorrect": false }
         ],
-        "hint": "身近な大人に相談しよう。"
+        "hint": "みぢかな おとなに そうだんしよう。"
       },
       {
         "questionNumber": 31,
@@ -341,7 +341,7 @@
           { "text": "あたまを かくすため", "rationale": "あたまを かくすのが もくてきでは ありません。", "isCorrect": false },
           { "text": "おもいから", "rationale": "ぼうしは おもいものでは ありません。", "isCorrect": false }
         ],
-        "hint": "夏の暑い日には欠かせないね。"
+        "hint": "なつの あつい ひには かかせないね。"
       },
       {
         "questionNumber": 32,
@@ -352,7 +352,7 @@
           { "text": "おそとに はしりだす", "rationale": "うえから かんばんなどが おちてくるので あぶないです。", "isCorrect": false },
           { "text": "テレビの まえ", "rationale": "テレビが たおれてくるかも しれません。", "isCorrect": false }
         ],
-        "hint": "頭を守るのが一番大事だよ。"
+        "hint": "あたまを まもるのが いちばん だいじだよ。"
       },
       {
         "questionNumber": 33,
@@ -363,18 +363,18 @@
           { "text": "コート", "rationale": "コートは おそとで さむいときに きるものです。", "isCorrect": false },
           { "text": "ランドセル", "rationale": "ランドセルは ふくでは ありません。", "isCorrect": false }
         ],
-        "hint": "お風呂上がりにお着替えする服だよ。"
+        "hint": "おふろあがりに おきがえする ふくだよ。"
       },
       {
         "questionNumber": 34,
-        "question": "おともだちが 泣いていたら、どうする？",
+        "question": "おともだちが ないていたら、どうする？",
         "answerOptions": [
           { "text": "「どうしたの？」ときく", "rationale": "やさしく こえを かけてあげるのが すてきです。", "isCorrect": true },
-          { "text": "いっしょに 泣く", "rationale": "泣くのもいいですが、まずは わけを きいてあげましょう。", "isCorrect": false },
+          { "text": "いっしょに なく", "rationale": "泣くのもいいですが、まずは わけを きいてあげましょう。", "isCorrect": false },
           { "text": "わらう", "rationale": "泣いている ひとを わらうのは いけないことです。", "isCorrect": false },
           { "text": "にげる", "rationale": "おともだちを ひとりぼっちに しないでね。", "isCorrect": false }
         ],
-        "hint": "優しい気持ちを持って接しよう。"
+        "hint": "やさしい きもちを もって つきあおう。"
       },
       {
         "questionNumber": 35,
@@ -385,7 +385,7 @@
           { "text": "おなかいっぱい", "rationale": "いうのは いいですが、まずは あいさつを しましょう。", "isCorrect": false },
           { "text": "おいしくない", "rationale": "つくってくれた ひとが かなしむことは 言わないようにしましょう。", "isCorrect": false }
         ],
-        "hint": "食べ終わった時の大切な挨拶だよ。"
+        "hint": "たべおわった ときの たいせつな あいさつだよ。"
       },
       {
         "questionNumber": 36,
@@ -396,7 +396,7 @@
           { "text": "すてる", "rationale": "だいじな おもちゃを すててはいけません。", "isCorrect": false },
           { "text": "こわす", "rationale": "ものを だいじに しないのは よくありません。", "isCorrect": false }
         ],
-        "hint": "次の遊びも楽しくできるようにしよう。"
+        "hint": "つぎの あそびも たのしく できるように しよう。"
       },
       {
         "questionNumber": 37,
@@ -407,7 +407,7 @@
           { "text": "おふろに はいる", "rationale": "おふろに はいると あせを かいて 水分が なくなります。", "isCorrect": false },
           { "text": "しおを たべる", "rationale": "しおだけを たべるのは 体によくありません。", "isCorrect": false }
         ],
-        "hint": "体の水分を補給しよう。"
+        "hint": "からだの すいぶんを ほきゅうしよう。"
       },
       {
         "questionNumber": 38,
@@ -416,9 +416,9 @@
           { "text": "ベルトを つかむ", "rationale": "あんぜんのために つかまるのは いいことです。", "isCorrect": false },
           { "text": "はしりまわる", "rationale": "ふみはずしたり ころんだりして あぶないからです。", "isCorrect": true },
           { "text": "まえを みる", "rationale": "まえを みるのは いいことです。", "isCorrect": false },
-          { "text": "きいろい 線のなかに たつ", "rationale": "線のなかに たつのが 正しい のりかたです。", "isCorrect": false }
+          { "text": "きいろい せんのなかに たつ", "rationale": "線のなかに たつのが 正しい のりかたです。", "isCorrect": false }
         ],
-        "hint": "動いている階段の上ではどう過ごすべきかな？"
+        "hint": "うごいている かいだんの うえでは どう すごすべきかな？"
       },
       {
         "questionNumber": 39,
@@ -429,18 +429,18 @@
           { "text": "なわとび", "rationale": "おうちに かえって なわとびは しません。", "isCorrect": false },
           { "text": "おかしを たべる", "rationale": "うがいを してから たべましょう。", "isCorrect": false }
         ],
-        "hint": "口の中をガラガラぺーするよ。"
+        "hint": "くちの なかを ガラガラぺーするよ。"
       },
       {
         "questionNumber": 40,
-        "question": "おともだちに 「ありがとう」と 言われたら、なんて かえす？",
+        "question": "おともだちに 「ありがとう」と いわれたら、なんて かえす？",
         "answerOptions": [
           { "text": "どういたしまして", "rationale": "「ありがとう」に たいする やさしい おへんじです。", "isCorrect": true },
           { "text": "うるさいな", "rationale": "せっかく お礼を 言ってくれたのに かなしませてしまいます。", "isCorrect": false },
-          { "text": "お金を ちょうだい", "rationale": "親切に したのは お金のためでは ありません。", "isCorrect": false },
+          { "text": "おかねを ちょうだい", "rationale": "親切に したのは お金のためでは ありません。", "isCorrect": false },
           { "text": "さようなら", "rationale": "お話が 終わる前の 挨拶としては 変です。", "isCorrect": false }
         ],
-        "hint": "お互いに気持ちよくなれる返事だよ。"
+        "hint": "おたがいに きもちよく なる へんじだよ。"
       },
       {
         "questionNumber": 41,
@@ -451,7 +451,7 @@
           { "text": "ゆかに おく", "rationale": "だれかが ふむと とても あぶないです。", "isCorrect": false },
           { "text": "ふりまわす", "rationale": "ぜったいに やってはいけない あぶないことです。", "isCorrect": false }
         ],
-        "hint": "道具を正しく片付ける方法だよ。"
+        "hint": "どうぐを ただしく かたづける ほうほうだよ。"
       },
       {
         "questionNumber": 42,
@@ -462,7 +462,7 @@
           { "text": "おおきな おとで おんがくを かける", "rationale": "うるさくて まわりの ひとにも めいわくです。", "isCorrect": false },
           { "text": "ダンスを する", "rationale": "ねるまえに うごくと めが さめてしまいます。", "isCorrect": false }
         ],
-        "hint": "静かな環境を作ろう。"
+        "hint": "しずかな かんきょうを つくろう。"
       },
       {
         "questionNumber": 43,
@@ -473,18 +473,18 @@
           { "text": "おうちまで つれていく", "rationale": "おうちの ばしょを おしえるのは ぜったいに だめです。", "isCorrect": false },
           { "text": "でんわばんごうを おしえる", "rationale": "でんわばんごうも だいじな ひみつです。", "isCorrect": false }
         ],
-        "hint": "自分の情報は守ろうね。"
+        "hint": "じぶんの じょうほうは まもろうね。"
       },
       {
         "questionNumber": 44,
         "question": "おかしを たべるとき、どうやって たべる？",
         "answerOptions": [
-          { "text": "座って たべる", "rationale": "はしりながら たべると のどに つまるかも しれず あぶないです。", "isCorrect": true },
+          { "text": "すわって たべる", "rationale": "はしりながら たべると のどに つまるかも しれず あぶないです。", "isCorrect": true },
           { "text": "はしりながら たべる", "rationale": "ころんだときに あぶないし、おぎょうぎも よくありません。", "isCorrect": false },
           { "text": "ねころんで たべる", "rationale": "のどに つまらせるかも しれません。", "isCorrect": false },
           { "text": "なげながら たべる", "rationale": "食べ物を 粗末に してはいけません。", "isCorrect": false }
         ],
-        "hint": "お行儀よく、安全に食べよう。"
+        "hint": "おぎょうぎ よく、あんぜんに たべよう。"
       },
       {
         "questionNumber": 45,
@@ -495,13 +495,13 @@
           { "text": "せんろの ちかく", "rationale": "でんしゃが きて とても あぶないです。", "isCorrect": false },
           { "text": "ちゅうしゃじょう", "rationale": "くるまが うごくので あぶない場所です。", "isCorrect": false }
         ],
-        "hint": "安全な遊び場を選ぼう。"
+        "hint": "あんぜんな あそびばを えらぼう。"
       },
       {
         "questionNumber": 46,
         "question": "あさ、ごはんを たべるのは どうして？",
         "answerOptions": [
-          { "text": "１にちの 元気を だすため", "rationale": "ごはんを たべると からだや あたまが よく うごきます。", "isCorrect": true },
+          { "text": "１にちの げんきを だすため", "rationale": "ごはんを たべると からだや あたまが よく うごきます。", "isCorrect": true },
           { "text": "ひまだから", "rationale": "ごはんは 大切な 栄養をとるためのものです。", "isCorrect": false },
           { "text": "おさらを よごすため", "rationale": "おさらを よごすのが もくてきでは ありません。", "isCorrect": false },
           { "text": "ねむくなるため", "rationale": "ごはんは 元気を だすために たべます。", "isCorrect": false }
@@ -510,14 +510,14 @@
       },
       {
         "questionNumber": 47,
-        "question": "おともだちに 「かして」と言われたとき、まだ つかいたいときは？",
+        "question": "おともだちに 「かして」と いわれたとき、まだ つかいたいときは？",
         "answerOptions": [
           { "text": "「あとでね」という", "rationale": "いま つかっていることを やさしく つたえましょう。", "isCorrect": true },
           { "text": "だまって にげる", "rationale": "おともだちが こまってしまいます。", "isCorrect": false },
           { "text": "おもちゃを かくす", "rationale": "いじわるをするのは よくありません。", "isCorrect": false },
           { "text": "なきだす", "rationale": "ことばで ちゃんと お話ししましょう。", "isCorrect": false }
         ],
-        "hint": "次に貸す約束をしよう。"
+        "hint": "つぎに かす やくそくを しよう。"
       },
       {
         "questionNumber": 48,
@@ -528,7 +528,7 @@
           { "text": "そらをとぶ", "rationale": "くつしたは そらを とびません。", "isCorrect": false },
           { "text": "ケーキに なる", "rationale": "くつしたは 食べ物には なりません。", "isCorrect": false }
         ],
-        "hint": "お部屋の様子を想像してみて。"
+        "hint": "おへやの ようすを そうぞうしてみて。"
       },
       {
         "questionNumber": 49,
@@ -539,7 +539,7 @@
           { "text": "かたまで つかる", "rationale": "からだが あたたまるので いいことです。", "isCorrect": false },
           { "text": "シャワーを つかう", "rationale": "正しく つかえば もんだいありません。", "isCorrect": false }
         ],
-        "hint": "お風呂場は滑りやすいから気をつけて。"
+        "hint": "おふろばは すべりやすいから きをつけて。"
       },
       {
         "questionNumber": 50,
@@ -550,7 +550,7 @@
           { "text": "わすれる", "rationale": "わすれても もんだいは かいけつしません。", "isCorrect": false },
           { "text": "どなる", "rationale": "おこっても 解決には つながりません。", "isCorrect": false }
         ],
-        "hint": "周りの人を頼ってみてね。"
+        "hint": "まわりの ひとを たよってみてね。"
       }
     ]
   }
