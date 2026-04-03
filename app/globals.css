@@ -24,3 +24,70 @@ body {
     opacity: 0.25;
   }
 }
+
+/* 正解オーバーレイ：動く虹色背景 */
+@keyframes feedback-correct-bg-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.feedback-correct-backdrop {
+  background: linear-gradient(
+    -45deg,
+    #fef08a,
+    #fb7185,
+    #38bdf8,
+    #a78bfa,
+    #4ade80,
+    #fcd34d,
+    #f472b6,
+    #fef08a
+  );
+  background-size: 500% 500%;
+  animation: feedback-correct-bg-shift 2.8s ease infinite;
+}
+
+/* くるくる光の筋 */
+@keyframes feedback-rays-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.feedback-rays-layer {
+  position: absolute;
+  left: 50%;
+  top: 42%;
+  width: 220vmin;
+  height: 220vmin;
+  margin-left: -110vmin;
+  margin-top: -110vmin;
+  background: repeating-conic-gradient(
+    from 0deg,
+    rgba(255, 255, 255, 0.22) 0deg 10deg,
+    transparent 10deg 22deg
+  );
+  animation: feedback-rays-spin 14s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes feedback-wrong-flash {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 0.92;
+  }
+}
+
+.feedback-wrong-pulse {
+  animation: feedback-wrong-flash 0.45s ease-in-out infinite;
+}
