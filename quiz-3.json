@@ -15,7 +15,7 @@
       },
       {
         "questionNumber": 102,
-        "question": "「つくえ」の うえに 「えんぴつ」が あります。どちらが おもいかな？",
+        "question": "「つくえ」と「えんぴつ」が あります。どちらが おもいかな？",
         "answerOptions": [
           { "text": "つくえ", "rationale": "つくえは おおきくて おもい きなどで できているからです。", "isCorrect": true },
           { "text": "えんぴつ", "rationale": "えんぴつは ちいさくて かるい どうぐです。", "isCorrect": false },
@@ -26,10 +26,10 @@
       },
       {
         "questionNumber": 103,
-        "question": "「きって、てがみ、みかん…」 しりとりの つぎは なに？",
+        "question": "「きって、てがみ、みるく…」 しりとりの つぎは なに？",
         "answerOptions": [
           { "text": "んぼう", "rationale": "「ん」で はじまる ことばは しりとりでは つかえません。", "isCorrect": false },
-          { "text": "からす", "rationale": "「みかん」の さいごは 「ん」なので しりとりは おわりです。", "isCorrect": true },
+          { "text": "くるま", "rationale": "「く」からはじまるくるまです。", "isCorrect": true },
           { "text": "みどり", "rationale": "「ん」から はじまる ことばは ありません。", "isCorrect": false },
           { "text": "とまと", "rationale": "「ん」の つぎは ありません。", "isCorrect": false }
         ],
@@ -521,9 +521,9 @@
       },
       {
         "questionNumber": 148,
-        "question": "「バナナ」は くだもの。「きゅうり」は やさい。では 「たい」は？",
+        "question": "「バナナ」は くだもの。「きゅうり」は やさい。では 「まぐろ」は？",
         "answerOptions": [
-          { "text": "さかな", "rationale": "たいは うみに いる さかなの なまえです。", "isCorrect": true },
+          { "text": "さかな", "rationale": "まぐろは うみに いる さかなの なまえです。", "isCorrect": true },
           { "text": "むし", "rationale": "むしでは ありません。", "isCorrect": false },
           { "text": "とり", "rationale": "そらは とびません。", "isCorrect": false },
           { "text": "おかし", "rationale": "おかしでは ありません。", "isCorrect": false }
