@@ -31,6 +31,18 @@ describe("loadQuizBundleFromPath", () => {
       expect(item.hint).toBeTruthy();
     }
   });
+
+  it("loads quiz-3.json with title and 50 questions", () => {
+    const bundle = loadQuizBundleFromPath("quiz-3.json");
+    expect(bundle.quizTitle).toBeTruthy();
+    expect(bundle.questions).toHaveLength(50);
+    for (const item of bundle.questions) {
+      expect(item.choices).toHaveLength(4);
+      expect(item.correctIndex).toBeGreaterThanOrEqual(0);
+      expect(item.correctIndex).toBeLessThanOrEqual(3);
+      expect(item.hint).toBeTruthy();
+    }
+  });
 });
 
 describe("loadQuizQuestionsFromFile", () => {

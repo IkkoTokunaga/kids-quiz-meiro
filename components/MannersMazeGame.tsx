@@ -11,7 +11,7 @@ import { useChoiceTapGuard } from "@/lib/useChoiceTapGuard";
 import { PathTrack } from "./PathTrack";
 import { FeedbackOverlay } from "./FeedbackOverlay";
 import { GoalScreen } from "./GoalScreen";
-import { Stage1ClearScreen } from "./Stage1ClearScreen";
+import { StageClearScreen } from "./StageClearScreen";
 
 type StageBundle = {
   pool: QuizQuestionRaw[];
@@ -21,11 +21,39 @@ type StageBundle = {
 type Props = {
   stage1: StageBundle;
   stage2: StageBundle;
+  stage3: StageBundle;
 };
 
-export default function MannersMazeGame({ stage1, stage2 }: Props) {
-  const [playStage, setPlayStage] = useState<1 | 2>(1);
-  const [phase, setPhase] = useState<"quiz" | "stage1Complete" | "goal">("quiz");
+type PlayStage = 1 | 2 | 3;
+
+function stageVisuals(playStage: PlayStage) {
+  if (playStage === 1) {
+    return {
+      outerBg: "bg-gradient-to-b from-sky-400 via-sky-200 to-lime-200",
+      cloudClass: "bg-white/70",
+      cloudClass2: "bg-white/60",
+      groundStripClass: "bg-gradient-to-t from-lime-400/80 to-transparent",
+    };
+  }
+  if (playStage === 2) {
+    return {
+      outerBg: "bg-gradient-to-b from-indigo-500 via-violet-200 to-rose-200",
+      cloudClass: "bg-white/50",
+      cloudClass2: "bg-white/45",
+      groundStripClass: "bg-gradient-to-t from-fuchsia-600/75 to-transparent",
+    };
+  }
+  return {
+    outerBg: "bg-gradient-to-b from-teal-600 via-cyan-200 to-emerald-100",
+    cloudClass: "bg-white/45",
+    cloudClass2: "bg-white/40",
+    groundStripClass: "bg-gradient-to-t from-emerald-700/70 to-transparent",
+  };
+}
+
+export default function MannersMazeGame({ stage1, stage2, stage3 }: Props) {
+  const [playStage, setPlayStage] = useState<PlayStage>(1);
+  const [phase, setPhase] = useState<"quiz" | "stage1Complete" | "stage2Complete" | "goal">("quiz");
   const [questions, setQuestions] = useState<QuizQuestionRaw[]>(() =>
     pickRandomQuestions(stage1.pool, 10),
   );
@@ -35,12 +63,13 @@ export default function MannersMazeGame({ stage1, stage2 }: Props) {
   /** オーバーレイの種類・進捗はイベント内で最新値を読む（Strict Mode の updater 二重実行と無関係にする） */
   const feedbackRef = useRef<null | "correct" | "wrong">(null);
   const progressRef = useRef(0);
-  const playStageRef = useRef<1 | 2>(1);
+  const playStageRef = useRef<PlayStage>(1);
   feedbackRef.current = feedback;
   progressRef.current = progress;
   playStageRef.current = playStage;
 
-  const activeBundle = playStage === 1 ? stage1 : stage2;
+  const activeBundle =
+    playStage === 1 ? stage1 : playStage === 2 ? stage2 : stage3;
   const quizTitle = activeBundle.quizTitle;
 
   const current = progress < 10 ? questions[progress] : undefined;
@@ -68,6 +97,15 @@ export default function MannersMazeGame({ stage1, stage2 }: Props) {
     setRound(null);
   }, [stage2.pool]);
 
+  const goToStage3 = useCallback(() => {
+    setQuestions(pickRandomQuestions(stage3.pool, 10));
+    setProgress(0);
+    setPlayStage(3);
+    setPhase("quiz");
+    setFeedback(null);
+    setRound(null);
+  }, [stage3.pool]);
+
   const handlePick = useCallback(
     (displayIndex: 0 | 1 | 2 | 3) => {
       if (feedback !== null || phase !== "quiz" || !current || !round) return;
@@ -91,11 +129,10 @@ export default function MannersMazeGame({ stage1, stage2 }: Props) {
     if (!wasCorrect) return;
     const { next, goal } = advanceAfterCorrect(progressRef.current);
     if (goal) {
-      if (playStageRef.current === 1) {
-        setPhase("stage1Complete");
-      } else {
-        setPhase("goal");
-      }
+      const s = playStageRef.current;
+      if (s === 1) setPhase("stage1Complete");
+      else if (s === 2) setPhase("stage2Complete");
+      else setPhase("goal");
     }
     setProgress(next);
   }, []);
@@ -104,30 +141,20 @@ export default function MannersMazeGame({ stage1, stage2 }: Props) {
   const questionNum = progress + 1;
   const overlayOpen = feedback !== null;
 
-  const outerBg =
-    playStage === 1
-      ? "bg-gradient-to-b from-sky-400 via-sky-200 to-lime-200"
-      : "bg-gradient-to-b from-indigo-500 via-violet-200 to-rose-200";
-
-  const cloudClass =
-    playStage === 1
-      ? "bg-white/70"
-      : "bg-white/50";
-
-  const cloudClass2 =
-    playStage === 1
-      ? "bg-white/60"
-      : "bg-white/45";
-
-  const groundStripClass =
-    playStage === 1
-      ? "bg-gradient-to-t from-lime-400/80 to-transparent"
-      : "bg-gradient-to-t from-fuchsia-600/75 to-transparent";
+  const { outerBg, cloudClass, cloudClass2, groundStripClass } = stageVisuals(playStage);
 
   if (phase === "stage1Complete") {
     return (
       <div className={`relative min-h-[100dvh] overflow-x-clip ${outerBg}`}>
-        <Stage1ClearScreen onPlayFromStart={startFromStage1} onNextStage={goToStage2} />
+        <StageClearScreen clearedStage={1} onPlayFromStart={startFromStage1} onNextStage={goToStage2} />
+      </div>
+    );
+  }
+
+  if (phase === "stage2Complete") {
+    return (
+      <div className={`relative min-h-[100dvh] overflow-x-clip ${outerBg}`}>
+        <StageClearScreen clearedStage={2} onPlayFromStart={startFromStage1} onNextStage={goToStage3} />
       </div>
     );
   }
@@ -149,6 +176,13 @@ export default function MannersMazeGame({ stage1, stage2 }: Props) {
       </div>
     );
   }
+
+  const tagline =
+    playStage === 1
+      ? "まちがえたら もういちど。10ます ゴールを めざそう！"
+      : playStage === 2
+        ? "ちょっと レベルアップ！まちがえたら もういちど。10ます ゴールを めざそう！"
+        : "ちょうせん ステージ！まちがえたら もういちど。10ます ゴールを めざそう！";
 
   return (
     <div className={`relative min-h-[100dvh] overflow-x-clip ${outerBg}`}>
@@ -172,11 +206,7 @@ export default function MannersMazeGame({ stage1, stage2 }: Props) {
             <Map className="h-7 w-7 text-amber-900" aria-hidden />
             <h1 className="text-xl font-black tracking-wide text-amber-950 sm:text-2xl">{quizTitle}</h1>
           </div>
-          <p className="mt-2 text-sm font-semibold text-white/90">
-            {playStage === 1
-              ? "まちがえたら もういちど。10ます ゴールを めざそう！"
-              : "ちょっと レベルアップ！まちがえたら もういちど。10ます ゴールを めざそう！"}
-          </p>
+          <p className="mt-2 text-sm font-semibold text-white/90">{tagline}</p>
         </header>
 
         <section aria-label="すすみかた" className="mb-4 rounded-2xl bg-white/30 p-2 shadow-inner backdrop-blur-sm">
