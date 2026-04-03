@@ -10,7 +10,7 @@ type Props = {
 export function GoalScreen({ onReplay }: Props) {
   return (
     <div
-      className="fixed inset-0 z-40 flex flex-col items-center justify-center bg-gradient-to-b from-sky-300/95 via-lime-100/95 to-amber-100/95 p-6 text-center"
+      className="fixed inset-0 z-40 flex flex-col items-center justify-center bg-gradient-to-b from-indigo-400/95 via-fuchsia-100/95 to-rose-100/95 p-6 text-center"
       role="dialog"
       aria-modal="true"
       aria-labelledby="goal-title"
@@ -28,7 +28,7 @@ export function GoalScreen({ onReplay }: Props) {
             className="mt-4 text-lg font-semibold text-slate-700"
             aria-live="polite"
           >
-            10もん ぜんぶ せいかい！
+            ステージ2 も 10もん ぜんぶ せいかい！
             <br />
             とっても えらいね！
           </p>

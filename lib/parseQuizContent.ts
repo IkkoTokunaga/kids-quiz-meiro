@@ -40,32 +40,32 @@ function isJsonQuestion(x: unknown): x is JsonQuestion {
   return true;
 }
 
-function parseQuizJson(raw: string): QuizBundle {
+function parseQuizJson(raw: string, sourceLabel: string): QuizBundle {
   let root: unknown;
   try {
     root = JSON.parse(raw) as unknown;
   } catch {
-    throw new Error("quiz.json: invalid JSON");
+    throw new Error(`${sourceLabel}: invalid JSON`);
   }
   if (!root || typeof root !== "object") {
-    throw new Error("quiz.json: root must be an object");
+    throw new Error(`${sourceLabel}: root must be an object`);
   }
   const r = root as QuizJsonRoot;
   if (typeof r.quizTitle !== "string" || !r.quizTitle.trim()) {
-    throw new Error("quiz.json: quizTitle is required");
+    throw new Error(`${sourceLabel}: quizTitle is required`);
   }
   if (!Array.isArray(r.questions) || r.questions.length < 10) {
-    throw new Error("quiz.json: need at least 10 questions");
+    throw new Error(`${sourceLabel}: need at least 10 questions`);
   }
   const questions: QuizQuestionRaw[] = [];
   for (let i = 0; i < r.questions.length; i++) {
     const item = r.questions[i];
     if (!isJsonQuestion(item)) {
-      throw new Error(`quiz.json: invalid question at index ${i}`);
+      throw new Error(`${sourceLabel}: invalid question at index ${i}`);
     }
     const correctIdx = item.answerOptions.findIndex((opt) => opt.isCorrect);
     if (correctIdx < 0 || correctIdx > 3) {
-      throw new Error(`quiz.json: question at index ${i} has no valid correct option`);
+      throw new Error(`${sourceLabel}: question at index ${i} has no valid correct option`);
     }
     questions.push({
       question: item.question,
@@ -86,10 +86,14 @@ function parseQuizJson(raw: string): QuizBundle {
   };
 }
 
-export function loadQuizBundleFromFile(): QuizBundle {
-  const full = path.join(process.cwd(), "quiz.json");
+export function loadQuizBundleFromPath(relativePath: string): QuizBundle {
+  const full = path.join(process.cwd(), relativePath);
   const raw = fs.readFileSync(full, "utf8");
-  return parseQuizJson(raw);
+  return parseQuizJson(raw, relativePath);
+}
+
+export function loadQuizBundleFromFile(): QuizBundle {
+  return loadQuizBundleFromPath("quiz.json");
 }
 
 export function loadQuizQuestionsFromFile(): QuizQuestionRaw[] {

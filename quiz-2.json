@@ -1,0 +1,556 @@
+{
+    "quizTitle": "レベルアップ！せいかつ・ちえクイズ 50",
+    "targetAge": "しんがくねん・レベルアップ",
+    "questions": [
+      {
+        "questionNumber": 51,
+        "question": "おかしを ３こ もっています。１こ たべたら、のこりは なんこ？",
+        "answerOptions": [
+          { "text": "２こ", "rationale": "３から １を ひくと ２に なるからです。", "isCorrect": true },
+          { "text": "１こ", "rationale": "１こ たべても ２こ のこっています。", "isCorrect": false },
+          { "text": "３こ", "rationale": "たべたら かずは へってしまいます。", "isCorrect": false },
+          { "text": "０こ", "rationale": "ぜんぶ たべては いません。", "isCorrect": false }
+        ],
+        "hint": "ゆびを ３ぼん だして、１ぼん おってみて。"
+      },
+      {
+        "questionNumber": 52,
+        "question": "「みぎ」の おててで おはしを もくとき、「ひだり」の おてては どうする？",
+        "answerOptions": [
+          { "text": "おちゃわんに そえる", "rationale": "おさらが うごかないように おさえるのが かっこいいです。", "isCorrect": true },
+          { "text": "ぽけっとに いれる", "rationale": "ごはんと たべるときは おててを だしましょう。", "isCorrect": false },
+          { "text": "あたまを かく", "rationale": "ごはんの ときは おててを おさらに ちかづけましょう。", "isCorrect": false },
+          { "text": "ふりまわす", "rationale": "おともだちに ぶつかると あぶないです。", "isCorrect": false }
+        ],
+        "hint": "おさらが にげないように やさしく おさえてあげよう。"
+      },
+      {
+        "questionNumber": 53,
+        "question": "「りんご、みかん、りんご、みかん…」 つぎに くるのは なに？",
+        "answerOptions": [
+          { "text": "りんご", "rationale": "りんごと みかんが こうごに ならんでいるからです。", "isCorrect": true },
+          { "text": "みかん", "rationale": "みかんの つぎは りんごが くる ルールです。", "isCorrect": false },
+          { "text": "バナナ", "rationale": "バナナは この ルールの なかに ありません。", "isCorrect": false },
+          { "text": "ぶどう", "rationale": "ぶどうは まだ でてきていません。", "isCorrect": false }
+        ],
+        "hint": "じゅんばんを よく みてみてね。"
+      },
+      {
+        "questionNumber": 54,
+        "question": "「１１０ばん」は どんなときに でんわを する？",
+        "answerOptions": [
+          { "text": "おなかが すいたとき", "rationale": "おなかが すいても けいさつかんは きてくれません。", "isCorrect": false },
+          { "text": "どろぼうを みつけたとき", "rationale": "けいさつかんに たすけてもらうための ばんごうです。", "isCorrect": true },
+          { "text": "おもちゃが ほしいとき", "rationale": "おもちゃは おみぜで かうものです。", "isCorrect": false },
+          { "text": "ねむいとき", "rationale": "ねるときは パジャマを きて ねましょう。", "isCorrect": false }
+        ],
+        "hint": "けいさつかんを よぶときの ばんごうだよ。"
+      },
+      {
+        "questionNumber": 55,
+        "question": "スーパーで まいごに なっちゃった！ どうすれば いい？",
+        "answerOptions": [
+          { "text": "おみせの ひとに いう", "rationale": "おみせの ひとは たすけてくれる おとなです。", "isCorrect": true },
+          { "text": "おそとに はしりだす", "rationale": "おそとに いくと パパや ママと もっと あえなくなります。", "isCorrect": false },
+          { "text": "ひとりで かえる", "rationale": "みちが わからなくなると あぶないので、そのばに いる おとなに たよりましょう。", "isCorrect": false },
+          { "text": "おかしを たべる", "rationale": "おかしを たべても まいごは なおりません。", "isCorrect": false }
+        ],
+        "hint": "おみせの バッジを つけている ひとを さがそう。"
+      },
+      {
+        "questionNumber": 56,
+        "question": "「あ、い、う、え、お」の つぎの もじは なに？",
+        "answerOptions": [
+          { "text": "か", "rationale": "あいうえおの あとは かきくけこ が はじまります。", "isCorrect": true },
+          { "text": "さ", "rationale": "さは まだ あとで でてくる もじです。", "isCorrect": false },
+          { "text": "ん", "rationale": "んは いちばん さいごの もじです。", "isCorrect": false },
+          { "text": "た", "rationale": "たは 「さ」の あとに くる もじです。", "isCorrect": false }
+        ],
+        "hint": "あいうえお、のつぎは？"
+      },
+      {
+        "questionNumber": 57,
+        "question": "おともだちが 「いれて」と いってきた。どうする？",
+        "answerOptions": [
+          { "text": "「いいよ」という", "rationale": "みんなで あそぶほうが たのしいからです。", "isCorrect": true },
+          { "text": "「だめ」という", "rationale": "いじわるを すると おともだちが かなしみます。", "isCorrect": false },
+          { "text": "しらんぷり", "rationale": "おはなしを きかないのは よくありません。", "isCorrect": false },
+          { "text": "にげる", "rationale": "にげても おともだちは こまってしまいます。", "isCorrect": false }
+        ],
+        "hint": "いっしょに あそぶときの まほうの ことばだよ。"
+      },
+      {
+        "questionNumber": 58,
+        "question": "よる、ねているとき、「じしん」が きたら どうする？",
+        "answerOptions": [
+          { "text": "ふとんを かぶる", "rationale": "まくらや ふとんで あたまを まもるのが いちばんです。", "isCorrect": true },
+          { "text": "まどを あける", "rationale": "ガラスが われるかも しれないので ちかづかないでね。", "isCorrect": false },
+          { "text": "たって はしる", "rationale": "ゆれているときに はしると ころんでしまいます。", "isCorrect": false },
+          { "text": "ライトを たべる", "rationale": "ライトは たべるものでは ありません。", "isCorrect": false }
+        ],
+        "hint": "あたまを やわらかい もので まもろう。"
+      },
+      {
+        "questionNumber": 59,
+        "question": "おちゃわんの なかに、ごはんが すこし のこった。どうする？",
+        "answerOptions": [
+          { "text": "さいごまで たべる", "rationale": "つくってくれた ひとや おこめへの かんしゃです。", "isCorrect": true },
+          { "text": "みずに ながす", "rationale": "たべものを そまつに してはいけません。", "isCorrect": false },
+          { "text": "つくえの したに すてる", "rationale": "おへやが きたなくなるし、よくないことです。", "isCorrect": false },
+          { "text": "おもちゃに する", "rationale": "ごはんは あそぶものでは ありません。", "isCorrect": false }
+        ],
+        "hint": "「もったいない」の きもちだよ。"
+      },
+      {
+        "questionNumber": 60,
+        "question": "「きいろ」の しんごうは、どんな いみ？",
+        "answerOptions": [
+          { "text": "いそいで わたる", "rationale": "いそいでも とちゅうで あかになるので あぶないです。", "isCorrect": false },
+          { "text": "とまる（わたらない）", "rationale": "きいろは もうすぐ あかになる あいずです。", "isCorrect": true },
+          { "text": "ゆっくり あるく", "rationale": "きいろのときに わたってはいけません。", "isCorrect": false },
+          { "text": "ジャンプする", "rationale": "みちで ジャンプするのは あぶないです。", "isCorrect": false }
+        ],
+        "hint": "あかになる まえの、ちゅういの あいずだよ。"
+      },
+      {
+        "questionNumber": 61,
+        "question": "おともだちと おにごっこを しています。タッチされたら？",
+        "answerOptions": [
+          { "text": "おにに なる", "rationale": "タッチされたら おにを こうたいする ルールです。", "isCorrect": true },
+          { "text": "おこる", "rationale": "ゲームなので おこるのは おかしいです。", "isCorrect": false },
+          { "text": "なきながら かえる", "rationale": "ルールを まもって たのしく あそびましょう。", "isCorrect": false },
+          { "text": "タッチしていないと うそをつく", "rationale": "うそを つくと みんなと あそべなく なります。", "isCorrect": false }
+        ],
+        "hint": "ゲームの ルールを おもいだそう。"
+      },
+      {
+        "questionNumber": 62,
+        "question": "ふみきりの 「カンカン」が なったら、どうする？",
+        "answerOptions": [
+          { "text": "いそいで わたる", "rationale": "でんしゃが すぐくるので ぜったいに だめです。", "isCorrect": false },
+          { "text": "まえで とまる", "rationale": "でんしゃが とおりすぎるのを まちましょう。", "isCorrect": true },
+          { "text": "したを くぐる", "rationale": "ぼうの したを くぐるのは とても あぶないです。", "isCorrect": false },
+          { "text": "おどる", "rationale": "ふみきりの ちかくは あぶない ばしょです。", "isCorrect": false }
+        ],
+        "hint": "でんしゃが くる あいずだよ。"
+      },
+      {
+        "questionNumber": 63,
+        "question": "おとうさんの おしごとちゅうに、どうしても はなしたいときは？",
+        "answerOptions": [
+          { "text": "「あとで いい？」ときく", "rationale": "おしごとが おわるのを まつのが すてきです。", "isCorrect": true },
+          { "text": "おおごえで さけぶ", "rationale": "びっくりして おしごとが できなくなります。", "isCorrect": false },
+          { "text": "パソコンを たたく", "rationale": "だいじな どうぐを こわしては いけません。", "isCorrect": false },
+          { "text": "なきまねを する", "rationale": "うそを ついて こまらせるのは よくありません。", "isCorrect": false }
+        ],
+        "hint": "あいての つごうを かんがえてみよう。"
+      },
+      {
+        "questionNumber": 64,
+        "question": "みかんが ５こ あります。２こ たべたら、のこりは？",
+        "answerOptions": [
+          { "text": "３こ", "rationale": "５から ２を ひくと ３に なります。", "isCorrect": true },
+          { "text": "７こ", "rationale": "たべたら かずは ふえません。", "isCorrect": false },
+          { "text": "２こ", "rationale": "のこりは ３こ です。", "isCorrect": false },
+          { "text": "５こ", "rationale": "たべたぶん、かずは へります。", "isCorrect": false }
+        ],
+        "hint": "５ほん ゆびを だして、２ほん かくしてみて。"
+      },
+      {
+        "questionNumber": 65,
+        "question": "おそとで どろんこに なった くつ。どうする？",
+        "answerOptions": [
+          { "text": "そのまま おうちに はいる", "rationale": "おうちの なかが どろだらけに なります。", "isCorrect": false },
+          { "text": "げんかんで ぬぐ", "rationale": "おうちを よごさないように ぬぎましょう。", "isCorrect": true },
+          { "text": "なめる", "rationale": "どろは きたないので なめてはいけません。", "isCorrect": false },
+          { "text": "かくす", "rationale": "かくしても どろは きえません。", "isCorrect": false }
+        ],
+        "hint": "おうちの なかを よごさない くふうだよ。"
+      },
+      {
+        "questionNumber": 66,
+        "question": "「１、３、５…」 つぎに くる かずは なに？",
+        "answerOptions": [
+          { "text": "６", "rationale": "ひとつ とばしの ルールなので ７が せいかいです。", "isCorrect": false },
+          { "text": "７", "rationale": "２ずつ ふえているので ７に なります。", "isCorrect": true },
+          { "text": "４", "rationale": "まえの かずより おおきい はずです。", "isCorrect": false },
+          { "text": "１０", "rationale": "いきなり おおきく なりすぎです。", "isCorrect": false }
+        ],
+        "hint": "すうじが いっことばしに なっているよ。"
+      },
+      {
+        "questionNumber": 67,
+        "question": "「ありがとう」を えいごで いうと？",
+        "answerOptions": [
+          { "text": "サンキュー", "rationale": "えいごで かんしゃを つたえる ことばです。", "isCorrect": true },
+          { "text": "ハロー", "rationale": "ハローは あいさつの ことばです。", "isCorrect": false },
+          { "text": "バイバイ", "rationale": "さようならの ことばです。", "isCorrect": false },
+          { "text": "イエス", "rationale": "「はい」という いみです。", "isCorrect": false }
+        ],
+        "hint": "テレビなどで きいたことが あるかも？"
+      },
+      {
+        "questionNumber": 68,
+        "question": "えんぴつが １ぽん あります。もう １ぽん かったら、なんぼん？",
+        "answerOptions": [
+          { "text": "１ぽん", "rationale": "ひとつ ふえたので ２に なります。", "isCorrect": false },
+          { "text": "２ほん", "rationale": "１に １を たすと ２に なります。", "isCorrect": true },
+          { "text": "３ぼん", "rationale": "２つ ふえては いません。", "isCorrect": false },
+          { "text": "０ほん", "rationale": "なくなってはいません。", "isCorrect": false }
+        ],
+        "hint": "１ ＋ １ は？"
+      },
+      {
+        "questionNumber": 69,
+        "question": "はなぢを ふいた ティッシュ、トイレに ながしても いい？",
+        "answerOptions": [
+          { "text": "いいよ", "rationale": "ティッシュは トイレに つまってしまうので だめです。", "isCorrect": false },
+          { "text": "だめだよ", "rationale": "トイレが つまらないように ごみばこに すてましょう。", "isCorrect": true },
+          { "text": "パパなら いい", "rationale": "だれが やっても つまってしまいます。", "isCorrect": false },
+          { "text": "ゆっくりなら いい", "rationale": "ゆっくりでも つまる げんいんに なります。", "isCorrect": false }
+        ],
+        "hint": "トイレットペーパー いがいは ながさない ルールだよ。"
+      },
+      {
+        "questionNumber": 70,
+        "question": "アイスクリームを ５つ かったら、おなかが いたくなった。どうして？",
+        "answerOptions": [
+          { "text": "たべすぎたから", "rationale": "つめたいものを たくさん たべると おなかが びっくりします。", "isCorrect": true },
+          { "text": "わらったから", "rationale": "わらっても おなかは いたくなりません。", "isCorrect": false },
+          { "text": "ねたから", "rationale": "ねても おなかは いたくなりません。", "isCorrect": false },
+          { "text": "うたったから", "rationale": "うたうのは いいことです。", "isCorrect": false }
+        ],
+        "hint": "つめたいものを いっきに たべると どうなる？"
+      },
+      {
+        "questionNumber": 71,
+        "question": "「さる、るびー、いか…」 しりとりです。つぎは なに？",
+        "answerOptions": [
+          { "text": "かめ", "rationale": "「いか」の さいごの もじ 「か」から はじまるからです。", "isCorrect": true },
+          { "text": "さかな", "rationale": "「い」から はじまっては いません。", "isCorrect": false },
+          { "text": "りんご", "rationale": "「か」から はじまっては いません。", "isCorrect": false },
+          { "text": "いぬ", "rationale": "「い」で はじまると おなじ もじに なります。", "isCorrect": false }
+        ],
+        "hint": "「いか」の さいごの もじから はじまる ことばだよ。"
+      },
+      {
+        "questionNumber": 72,
+        "question": "おともだちが おもちゃを かしてくれない。どうする？",
+        "answerOptions": [
+          { "text": "じゅんばんを まつ", "rationale": "おともだちが つかいおわるのを まつのが かっこいいです。", "isCorrect": true },
+          { "text": "むりやり とる", "rationale": "けんかに なるので ぜったいに いけません。", "isCorrect": false },
+          { "text": "おもちゃを たたく", "rationale": "おもちゃが かわいそうです。", "isCorrect": false },
+          { "text": "いじわるを いう", "rationale": "わるいことを いうと じぶんも かなしくなります。", "isCorrect": false }
+        ],
+        "hint": "じぶんの ばんが くるまで まってみよう。"
+      },
+      {
+        "questionNumber": 73,
+        "question": "かびんを わってしまった。だれにも みられていない。どうする？",
+        "answerOptions": [
+          { "text": "かくす", "rationale": "うそを ついても あとで ばれてしまいます。", "isCorrect": false },
+          { "text": "ごめんなさいと いう", "rationale": "しょうじきに はなすのが いちばん だいじです。", "isCorrect": true },
+          { "text": "ねこの せいにする", "rationale": "うそを つくのは よくありません。", "isCorrect": false },
+          { "text": "わらって ごまかす", "rationale": "まじめに あやまりましょう。", "isCorrect": false }
+        ],
+        "hint": "しょうじきに いう ゆうきを もとう。"
+      },
+      {
+        "questionNumber": 74,
+        "question": "テレビを みるとき、どこで みるのが いい？",
+        "answerOptions": [
+          { "text": "はなれて みる", "rationale": "めを わるく しないように はなれましょう。", "isCorrect": true },
+          { "text": "ちかくで みる", "rationale": "ちかすぎると めが つかれてしまいます。", "isCorrect": false },
+          { "text": "くらやみで みる", "rationale": "おへやを あかるくして みましょう。", "isCorrect": false },
+          { "text": "ねころんで みる", "rationale": "ただしい しせいで みましょう。", "isCorrect": false }
+        ],
+        "hint": "めを だいじにするための ルールだよ。"
+      },
+      {
+        "questionNumber": 75,
+        "question": "おそうじちゅう、ほこりが たくさん！ どうすれば いい？",
+        "answerOptions": [
+          { "text": "まどを あける", "rationale": "きれいな くうきを いれるためです。", "isCorrect": true },
+          { "text": "まどを しめる", "rationale": "ほこりが おへやに たまってしまいます。", "isCorrect": false },
+          { "text": "ほこりを たべる", "rationale": "ほこりは からだに わるいです。", "isCorrect": false },
+          { "text": "おおごえで うたう", "rationale": "ほこりを すいこんでしまいます。", "isCorrect": false }
+        ],
+        "hint": "くうきを いれかえるために することだよ。"
+      },
+      {
+        "questionNumber": 76,
+        "question": "「１０、９、８…」 つぎは なに？",
+        "answerOptions": [
+          { "text": "７", "rationale": "かずが １ずつ へっているからです。", "isCorrect": true },
+          { "text": "１１", "rationale": "かずが ふえては いません。", "isCorrect": false },
+          { "text": "０", "rationale": "いきなり ０には なりません。", "isCorrect": false },
+          { "text": "６", "rationale": "８の つぎは ７です。", "isCorrect": false }
+        ],
+        "hint": "ロケットの はっしゃみたいに かぞえてみて。"
+      },
+      {
+        "questionNumber": 77,
+        "question": "おともだちの おもちゃを こわしちゃった。どうする？",
+        "answerOptions": [
+          { "text": "あやまって いっしょに なおす", "rationale": "あやまることと、どうするか かんがえるのが だいじです。", "isCorrect": true },
+          { "text": "しらんぷり", "rationale": "おともだちが とても かなしみます。", "isCorrect": false },
+          { "text": "もっと こわす", "rationale": "ひどいことを してはいけません。", "isCorrect": false },
+          { "text": "おともだちの せいにする", "rationale": "うそを つくのは いけません。", "isCorrect": false }
+        ],
+        "hint": "こわしてしまったら、まずは あやまろう。"
+      },
+      {
+        "questionNumber": 78,
+        "question": "おうちに おきゃくさまが きた。なんて いう？",
+        "answerOptions": [
+          { "text": "こんにちは", "rationale": "あかるく あいさつを しましょう。", "isCorrect": true },
+          { "text": "だれ？", "rationale": "しつれいな いいかたは しないようにしましょう。", "isCorrect": false },
+          { "text": "おかしを ちょうだい", "rationale": "まずは あいさつを するのが マナーです。", "isCorrect": false },
+          { "text": "あっちにいって", "rationale": "おきゃくさまを こまらせてはいけません。", "isCorrect": false }
+        ],
+        "hint": "あかるい こえで あいさつしよう。"
+      },
+      {
+        "questionNumber": 79,
+        "question": "「あおい、あか、あ…」 つぎは なに？",
+        "answerOptions": [
+          { "text": "あひる", "rationale": "すべて 「あ」から はじまる ことばを あつめています。", "isCorrect": true },
+          { "text": "いか", "rationale": "「い」から はじまっては いません。", "isCorrect": false },
+          { "text": "きりん", "rationale": "「き」から はじまっては いません。", "isCorrect": false },
+          { "text": "ぞう", "rationale": "「ぞ」から はじまっては いません。", "isCorrect": false }
+        ],
+        "hint": "ぜんぶ「あ」から はじまる ことばだよ。"
+      },
+      {
+        "questionNumber": 80,
+        "question": "みちを あるいているとき、ボールが ころがってきた。どうする？",
+        "answerOptions": [
+          { "text": "おいかけて はしる", "rationale": "くるまが くるかも しれないので ぜったいに だめです。", "isCorrect": false },
+          { "text": "とまって くるまを みる", "rationale": "ボールより じぶんの いのちが だいじです。", "isCorrect": true },
+          { "text": "ボールを ける", "rationale": "みちで ボールを けるのは あぶないです。", "isCorrect": false },
+          { "text": "わらう", "rationale": "あぶない ことが おきたときは まじめにしましょう。", "isCorrect": false }
+        ],
+        "hint": "どうろに とびだすのは いちばん あぶないよ。"
+      },
+      {
+        "questionNumber": 81,
+        "question": "あつい おふろに はいるとき、どうやって はいる？",
+        "answerOptions": [
+          { "text": "いきなり とびこむ", "rationale": "しんぞうが びっくりして あぶないです。", "isCorrect": false },
+          { "text": "かけゆを してから はいる", "rationale": "おゆに からだを なれさせてから はいります。", "isCorrect": true },
+          { "text": "ふくを きて はいる", "rationale": "ふくは ぬいで はいるものです。", "isCorrect": false },
+          { "text": "おゆを ぜんぶ すてる", "rationale": "おふろに はいれなくなります。", "isCorrect": false }
+        ],
+        "hint": "からだを おゆに ならしてから はいろう。"
+      },
+      {
+        "questionNumber": 82,
+        "question": "はさみで ゆびを すこし きっちゃった。どうする？",
+        "answerOptions": [
+          { "text": "なめる", "rationale": "ばいきんが はいるかも しれません。", "isCorrect": false },
+          { "text": "みずで あらって ばんそうこう", "rationale": "きれいに あらって きずを まもりましょう。", "isCorrect": true },
+          { "text": "すなを かける", "rationale": "きずが よごれて いたくなってしまいます。", "isCorrect": false },
+          { "text": "わっはっはと わらう", "rationale": "ちゃんと てあてを しましょう。", "isCorrect": false }
+        ],
+        "hint": "まずは バイキンを あらいながそう。"
+      },
+      {
+        "questionNumber": 83,
+        "question": "「さる、きりん、ぞう」 なかまはずれは どれ？",
+        "answerOptions": [
+          { "text": "りんご", "rationale": "ほかは どうぶつですが、りんごは たべものです。", "isCorrect": true },
+          { "text": "さる", "rationale": "さるは どうぶつなので なかまです。", "isCorrect": false },
+          { "text": "ぞう", "rationale": "ぞうも どうぶつなので なかまです。", "isCorrect": false },
+          { "text": "きりん", "rationale": "きりんも どうぶつなので なかまです。", "isCorrect": false }
+        ],
+        "hint": "どうぶつじゃないものを さがしてね。"
+      },
+      {
+        "questionNumber": 84,
+        "question": "スーパーで おかしを かいたい。どうする？",
+        "answerOptions": [
+          { "text": "かってに あける", "rationale": "おかねを はらうまえに あけるのは どろぼうさんです。", "isCorrect": false },
+          { "text": "レジで おかねを はらう", "rationale": "おみせの ルールを まもりましょう。", "isCorrect": true },
+          { "text": "ぽけっとに いれる", "rationale": "それは どろぼうさんなので ぜったいに だめです。", "isCorrect": false },
+          { "text": "なげる", "rationale": "おかしが こわれてしまいます。", "isCorrect": false }
+        ],
+        "hint": "おみせの ひとに おかねを わたす ばしょは どこ？"
+      },
+      {
+        "questionNumber": 85,
+        "question": "よる おそくまで おきていたら、どうなる？",
+        "answerOptions": [
+          { "text": "せが のびる", "rationale": "ねている あいだに せは のびます。", "isCorrect": false },
+          { "text": "つぎのひ ねむくなる", "rationale": "しっかり ねないと げんきが でません。", "isCorrect": true },
+          { "text": "ちからが つよくなる", "rationale": "ねるほうあ ちからは つよくあなります。", "isCorrect": false },
+          { "text": "そらを とべる", "rationale": "よふかししても そらは とべません。", "isCorrect": false }
+        ],
+        "hint": "つぎのひの じぶんの ことを かんがえてみて。"
+      },
+      {
+        "questionNumber": 86,
+        "question": "おちゃを こぼしちゃった！ どうする？",
+        "answerOptions": [
+          { "text": "ふきんで ふく", "rationale": "よごれたら すぐに きれいにしましょう。", "isCorrect": true },
+          { "text": "およぐ", "rationale": "こぼした おちゃで およぐのは むりです。", "isCorrect": false },
+          { "text": "そのままにする", "rationale": "ゆかが ベタベタに なってしまいます。", "isCorrect": false },
+          { "text": "おどる", "rationale": "すべって ころぶかも しれないので あぶないです。", "isCorrect": false }
+        ],
+        "hint": "おそうじする どうぐを つかおう。"
+      },
+      {
+        "questionNumber": 87,
+        "question": "「１、２、〇、４」 〇に はいる かずは？",
+        "answerOptions": [
+          { "text": "３", "rationale": "じゅんばんに かぞえると ３に なります。", "isCorrect": true },
+          { "text": "５", "rationale": "４の まえは ３です。", "isCorrect": false },
+          { "text": "０", "rationale": "２の つぎは ３です。", "isCorrect": false },
+          { "text": "１０", "rationale": "いきなり おおきく なりすぎです。", "isCorrect": false }
+        ],
+        "hint": "１、２、のつぎは？"
+      },
+      {
+        "questionNumber": 88,
+        "question": "くつを みぎと ひだり ぎゃくに はいたら？",
+        "answerOptions": [
+          { "text": "あるきにくい", "rationale": "かたちが ちがうので あるきにくくなります。", "isCorrect": true },
+          { "text": "はやく はしれる", "rationale": "ぎゃくに おそく なってしまいます。", "isCorrect": false },
+          { "text": "そらを とべる", "rationale": "くつを ぎゃくに はいても とべません。", "isCorrect": false },
+          { "text": "せが のびる", "rationale": "せは のびません。", "isCorrect": false }
+        ],
+        "hint": "じぶんの あしの かたちを よく みてみて。"
+      },
+      {
+        "questionNumber": 89,
+        "question": "「パン、ごはん、ラーメン」 なかまはずれは どれ？",
+        "answerOptions": [
+          { "text": "えんぴつ", "rationale": "ほかは たべものですが、えんぴつは どうぐです。", "isCorrect": true },
+          { "text": "パン", "rationale": "パンは たべものなので なかまです。", "isCorrect": false },
+          { "text": "ごはん", "rationale": "ごはんも たべものなので なかまです。", "isCorrect": false },
+          { "text": "ラーメン", "rationale": "ラーメンも たべものなので なかまです。", "isCorrect": false }
+        ],
+        "hint": "たべられないものを さがしてね。"
+      },
+      {
+        "questionNumber": 90,
+        "question": "おはなに おみずを あげすぎたら？",
+        "answerOptions": [
+          { "text": "もっと げんきに なる", "rationale": "おおすぎると ねっこが くさってしまいます。", "isCorrect": false },
+          { "text": "かれて しまうかも", "rationale": "なにごとも てきとうな りょうが だいじです。", "isCorrect": true },
+          { "text": "しゃべりだす", "rationale": "おみずを あげても おはなは しゃべりません。", "isCorrect": false },
+          { "text": "はしる", "rationale": "おはなは はしりません。", "isCorrect": false }
+        ],
+        "hint": "おみずは ちょうどいい りょうが いちばんだよ。"
+      },
+      {
+        "questionNumber": 91,
+        "question": "こうえんに わすれものを みつけた。どうする？",
+        "answerOptions": [
+          { "text": "じぶんの ものに する", "rationale": "ひとの ものを かってに とっては いけません。", "isCorrect": false },
+          { "text": "おとなに おしえる", "rationale": "こうばんなどに とどけて もらいましょう。", "isCorrect": true },
+          { "text": "すてる", "rationale": "おとした ひとが こまってしまいます。", "isCorrect": false },
+          { "text": "こわす", "rationale": "ものを たいせつに しましょう。", "isCorrect": false }
+        ],
+        "hint": "おとした ひとが こまっているかも しれないね。"
+      },
+      {
+        "questionNumber": 92,
+        "question": "よる おそとで きれいな ひかりが うごいている。なに？",
+        "answerOptions": [
+          { "text": "ひこうき", "rationale": "よるでも ひこうきは ひかって とんでいます。", "isCorrect": true },
+          { "text": "ゆうれい", "rationale": "ゆうれいでは ありません。", "isCorrect": false },
+          { "text": "たいよう", "rationale": "よるに たいようは みえません。", "isCorrect": false },
+          { "text": "おばけ", "rationale": "ひこうきなどの のりものですよ。", "isCorrect": false }
+        ],
+        "hint": "そらを とぶ おおきな のりものだよ。"
+      },
+      {
+        "questionNumber": 93,
+        "question": "「バナナ」を ３かい いうと なに？",
+        "answerOptions": [
+          { "text": "バナナ、バナナ、バナナ", "rationale": "いった とおり バナナに なります。", "isCorrect": true },
+          { "text": "ココア", "rationale": "ココアには なりません。", "isCorrect": false },
+          { "text": "リンゴ", "rationale": "リンゴにも なりません。", "isCorrect": false },
+          { "text": "おかし", "rationale": "ことばを いっても ものは でません。", "isCorrect": false }
+        ],
+        "hint": "そのまま いってみて。"
+      },
+      {
+        "questionNumber": 94,
+        "question": "おともだちの おもちゃが うらやましい。どうする？",
+        "answerOptions": [
+          { "text": "「いいな」と いって みせてもらう", "rationale": "きもちを つたえて なかよく しましょう。", "isCorrect": true },
+          { "text": "こわす", "rationale": "いじわるを してはいけません。", "isCorrect": false },
+          { "text": "なきわめく", "rationale": "がまんする ことも だいじです。", "isCorrect": false },
+          { "text": "ぬすむ", "rationale": "どろぼうは いけないことです。", "isCorrect": false }
+        ],
+        "hint": "なかよくするための ことばを つかおう。"
+      },
+      {
+        "questionNumber": 95,
+        "question": "「は、ひ、ふ、へ、ほ」の まえは なに？",
+        "answerOptions": [
+          { "text": "な、に、ぬ、ね、の", "rationale": "あいうえおじゅんで 「なぎょう」の つぎが 「はぎょう」です。", "isCorrect": true },
+          { "text": "ま、み、む、め、も", "rationale": "まぎょうは 「はぎょう」の つぎです。", "isCorrect": false },
+          { "text": "あ、い、う、え、お", "rationale": "あいうえおは もっと まえです。", "isCorrect": false },
+          { "text": "ら、り、る、レ、ろ", "rationale": "らぎょうは さいごの ほうです。", "isCorrect": false }
+        ],
+        "hint": "あいうえお、かきくけこ、さしすせそ、たちつてと、なにぬねの、つぎは？"
+      },
+      {
+        "questionNumber": 96,
+        "question": "あめが あがった あと そらに でるのは？",
+        "answerOptions": [
+          { "text": "にじ", "rationale": "おひさまと みずで きれいな にじが できます。", "isCorrect": true },
+          { "text": "かみなり", "rationale": "かみなりは あめの ときに なりやすいです。", "isCorrect": false },
+          { "text": "ゆき", "rationale": "ゆきは さむい ときに ふります。", "isCorrect": false },
+          { "text": "はなび", "rationale": "はなびは ひとが うちあげる ものです。", "isCorrect": false }
+        ],
+        "hint": "７いろの きれいな はしみたいに みえるよ。"
+      },
+      {
+        "questionNumber": 97,
+        "question": "「１、４、７…」 つぎは なに？",
+        "answerOptions": [
+          { "text": "１０", "rationale": "３ずつ ふえているので １０に なります。", "isCorrect": true },
+          { "text": "８", "rationale": "ふえる かずが ちがいます。", "isCorrect": false },
+          { "text": "９", "rationale": "３たす ルールですよ。", "isCorrect": false },
+          { "text": "１１", "rationale": "すこし おおきすぎます。", "isCorrect": false }
+        ],
+        "hint": "すうじが ３つずつ ふえているよ。"
+      },
+      {
+        "questionNumber": 98,
+        "question": "としょかんで はしって ころんだ。どうする？",
+        "answerOptions": [
+          { "text": "しずかに おきる", "rationale": "まわりの めいわくに ならないようにしましょう。", "isCorrect": true },
+          { "text": "おおごえで なく", "rationale": "としょかんは しずかに する ばしょです。", "isCorrect": false },
+          { "text": "ほんを なげる", "rationale": "ほんを たいせつに しましょう。", "isCorrect": false },
+          { "text": "そのまま ねる", "rationale": "つうろで ねると じゃまに なります。", "isCorrect": false }
+        ],
+        "hint": "まずは おちついて、まわりの ようすを みてみて。"
+      },
+      {
+        "questionNumber": 99,
+        "question": "あさ おきて まどを あけるのは どうして？",
+        "answerOptions": [
+          { "text": "くうきを いれかえるため", "rationale": "あたらしい くうきを いれると きもちいいからです。", "isCorrect": true },
+          { "text": "むしを いれるため", "rationale": "むしは はいらない ほうが いいですね。", "isCorrect": false },
+          { "text": "どろぼうを よぶため", "rationale": "どろぼうは よんでは いけません。", "isCorrect": false },
+          { "text": "さむくするため", "rationale": "さむくする のが もくてきでは ありません。", "isCorrect": false }
+        ],
+        "hint": "おへやの くうきを リフレッシュしよう。"
+      },
+      {
+        "questionNumber": 100,
+        "question": "クイズが ぜんぶ おわった！ どうする？",
+        "answerOptions": [
+          { "text": "「やったー！」と よろこぶ", "rationale": "がんばった じぶんを ほめてあげましょう。", "isCorrect": true },
+          { "text": "なく", "rationale": "たのしい クイズだったので わらいましょう。", "isCorrect": false },
+          { "text": "スマホを なげる", "rationale": "ものは たいせつに しましょう。", "isCorrect": false },
+          { "text": "もう ねる", "rationale": "ねる まえに パパや ママに ほうこくしよう！", "isCorrect": false }
+        ],
+        "hint": "さいごまで がんばったね！"
+      }
+    ]
+  }
