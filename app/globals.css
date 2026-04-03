@@ -77,17 +77,3 @@ body {
   animation: feedback-rays-spin 14s linear infinite;
   pointer-events: none;
 }
-
-@keyframes feedback-wrong-flash {
-  0%,
-  100% {
-    opacity: 0.55;
-  }
-  50% {
-    opacity: 0.92;
-  }
-}
-
-.feedback-wrong-pulse {
-  animation: feedback-wrong-flash 0.45s ease-in-out infinite;
-}

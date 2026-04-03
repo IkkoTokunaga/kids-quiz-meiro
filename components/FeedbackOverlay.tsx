@@ -62,7 +62,7 @@ export function FeedbackOverlay({ open, variant, wrongHint, onClose }: Props) {
       ) : (
         <>
           <div
-            className="absolute inset-0 bg-gradient-to-b from-red-950 via-slate-950 to-red-950 opacity-95 feedback-wrong-pulse"
+            className="absolute inset-0 bg-gradient-to-b from-red-950 via-slate-950 to-red-950 opacity-95"
             aria-hidden
           />
           <div
