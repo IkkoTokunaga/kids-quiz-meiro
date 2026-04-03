@@ -5,10 +5,12 @@ import { FullScreenConfetti } from "./FullScreenConfetti";
 type Props = {
   open: boolean;
   variant: "correct" | "wrong";
+  /** 不正解のときだけ表示（1回まちがえたあとのヒント） */
+  wrongHint?: string;
   onClose: () => void;
 };
 
-export function FeedbackOverlay({ open, variant, onClose }: Props) {
+export function FeedbackOverlay({ open, variant, wrongHint, onClose }: Props) {
   if (!open) return null;
 
   const isCorrect = variant === "correct";
@@ -23,7 +25,7 @@ export function FeedbackOverlay({ open, variant, onClose }: Props) {
       role="dialog"
       aria-modal="true"
       aria-labelledby="feedback-title"
-      aria-describedby="feedback-desc"
+      aria-describedby={wrongHint && variant === "wrong" ? "feedback-desc feedback-hint" : "feedback-desc"}
     >
       {isCorrect ? (
         <>
@@ -79,7 +81,7 @@ export function FeedbackOverlay({ open, variant, onClose }: Props) {
           "relative z-[60] w-full max-w-4xl overflow-hidden rounded-3xl border-4 p-6 text-center shadow-2xl sm:p-8",
           isCorrect
             ? "animate-feedback-correct-pop border-amber-200 bg-gradient-to-b from-amber-50 via-yellow-100 to-amber-100 shadow-[0_0_0_4px_rgba(251,191,36,0.5),0_0_80px_rgba(250,204,21,0.75),0_25px_50px_rgba(245,158,11,0.35)]"
-            : "animate-feedback-wrong-shake border-red-600 bg-gradient-to-b from-red-100 to-rose-200 shadow-[0_0_0_3px_rgba(220,38,38,0.4),0_20px_40px_rgba(0,0,0,0.35)]",
+            : "border-red-600 bg-gradient-to-b from-red-100 to-rose-200 shadow-[0_0_0_3px_rgba(220,38,38,0.4),0_20px_40px_rgba(0,0,0,0.35)]",
         ].join(" ")}
         onClick={(e) => e.stopPropagation()}
       >
@@ -104,6 +106,15 @@ export function FeedbackOverlay({ open, variant, onClose }: Props) {
           >
             {desc}
           </p>
+          {!isCorrect && wrongHint ? (
+            <p
+              id="feedback-hint"
+              className="mt-5 rounded-2xl border-2 border-red-400/60 bg-white/80 px-4 py-3 text-left text-base font-bold leading-snug text-red-950 sm:text-lg"
+            >
+              <span className="block text-sm font-extrabold text-red-800 sm:text-base">ヒント</span>
+              {wrongHint}
+            </p>
+          ) : null}
         </div>
         <button
           type="button"

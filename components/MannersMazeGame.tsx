@@ -13,9 +13,10 @@ import { GoalScreen } from "./GoalScreen";
 
 type Props = {
   pool: QuizQuestionRaw[];
+  quizTitle: string;
 };
 
-export default function MannersMazeGame({ pool }: Props) {
+export default function MannersMazeGame({ pool, quizTitle }: Props) {
   const [phase, setPhase] = useState<"quiz" | "goal">("quiz");
   const [questions, setQuestions] = useState<QuizQuestionRaw[]>(() => pickRandomQuestions(pool, 10));
   const [qIndex, setQIndex] = useState(0);
@@ -91,7 +92,7 @@ export default function MannersMazeGame({ pool }: Props) {
         <div className="inline-flex items-center gap-2 rounded-full bg-white/25 px-4 py-2 shadow-sm backdrop-blur-sm">
           <Map className="h-7 w-7 text-amber-900" aria-hidden />
           <h1 className="text-xl font-black tracking-wide text-amber-950 sm:text-2xl">
-            せいかつマナー めいろ
+            {quizTitle}
           </h1>
         </div>
         <p className="mt-2 text-sm font-semibold text-white/90">まちがえたら もういちど。10ます ゴールを めざそう！</p>
@@ -136,6 +137,7 @@ export default function MannersMazeGame({ pool }: Props) {
       <FeedbackOverlay
         open={overlayOpen}
         variant={feedback === "wrong" ? "wrong" : "correct"}
+        wrongHint={feedback === "wrong" ? current.hint : undefined}
         onClose={closeFeedback}
       />
     </div>

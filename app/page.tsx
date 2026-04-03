@@ -1,8 +1,8 @@
 import MannersMazeGame from "@/components/MannersMazeGame";
-import { loadQuizQuestionsFromFile } from "@/lib/parseQuizContent";
+import { loadQuizBundleFromFile } from "@/lib/parseQuizContent";
 
 export default function Page() {
-  const pool = loadQuizQuestionsFromFile();
+  const { quizTitle, questions: pool } = loadQuizBundleFromFile();
 
   return (
     <div className="relative min-h-[100dvh] overflow-x-hidden bg-gradient-to-b from-sky-400 via-sky-200 to-lime-200">
@@ -19,7 +19,7 @@ export default function Page() {
         className="pointer-events-none absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-lime-400/80 to-transparent"
         aria-hidden
       />
-      <MannersMazeGame pool={pool} />
+      <MannersMazeGame pool={pool} quizTitle={quizTitle} />
     </div>
   );
 }
