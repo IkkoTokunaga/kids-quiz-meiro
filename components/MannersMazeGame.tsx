@@ -64,9 +64,11 @@ export default function MannersMazeGame({ stage1, stage2, stage3 }: Props) {
   const feedbackRef = useRef<null | "correct" | "wrong">(null);
   const progressRef = useRef(0);
   const playStageRef = useRef<PlayStage>(1);
+  const questionsRef = useRef<QuizQuestionRaw[]>(questions);
   feedbackRef.current = feedback;
   progressRef.current = progress;
   playStageRef.current = playStage;
+  questionsRef.current = questions;
 
   const activeBundle =
     playStage === 1 ? stage1 : playStage === 2 ? stage2 : stage3;
@@ -125,7 +127,6 @@ export default function MannersMazeGame({ stage1, stage2, stage3 }: Props) {
 
   const closeFeedback = useCallback(() => {
     const wasCorrect = feedbackRef.current === "correct";
-    setFeedback(null);
     if (!wasCorrect) return;
     const { next, goal } = advanceAfterCorrect(progressRef.current);
     if (goal) {
@@ -133,8 +134,16 @@ export default function MannersMazeGame({ stage1, stage2, stage3 }: Props) {
       if (s === 1) setPhase("stage1Complete");
       else if (s === 2) setPhase("stage2Complete");
       else setPhase("goal");
+      setProgress(next);
+      setFeedback(null);
+      return;
+    }
+    const nextQuestion = questionsRef.current[next];
+    if (nextQuestion) {
+      setRound(shuffleChoices(nextQuestion.choices));
     }
     setProgress(next);
+    setFeedback(null);
   }, []);
 
   /** いま解いているもんだい番号（1〜10）。進捗バーと常に一致 */

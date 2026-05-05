@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import { FullScreenConfetti } from "./FullScreenConfetti";
 
 type Props = {
@@ -11,13 +12,21 @@ type Props = {
 };
 
 export function FeedbackOverlay({ open, variant, wrongHint, onClose }: Props) {
-  if (!open) return null;
-
   const isCorrect = variant === "correct";
   const title = isCorrect ? "せいかい！" : "ざんねん！もういちど";
   const desc = isCorrect
     ? "つぎの ますに すすんだよ"
     : "ちがうよ。もういちど えらんでみてね";
+
+  useEffect(() => {
+    if (!open || !isCorrect) return;
+    const timerId = window.setTimeout(() => {
+      onClose();
+    }, 2400);
+    return () => window.clearTimeout(timerId);
+  }, [open, isCorrect, onClose]);
+
+  if (!open) return null;
 
   return (
     <div
@@ -116,19 +125,16 @@ export function FeedbackOverlay({ open, variant, wrongHint, onClose }: Props) {
             </p>
           ) : null}
         </div>
-        <button
-          type="button"
-          className={[
-            "relative z-20 mt-10 min-h-[3rem] w-full rounded-2xl px-4 py-3 text-lg font-bold shadow-lg active:scale-[0.98] sm:mt-12 sm:min-h-[3.25rem] sm:text-xl",
-            isCorrect
-              ? "bg-gradient-to-r from-amber-500 via-yellow-400 to-orange-500 text-amber-950 ring-4 ring-amber-200/80"
-              : "bg-gradient-to-r from-red-600 to-rose-700 text-white ring-4 ring-red-300/50",
-          ].join(" ")}
-          onClick={onClose}
-          aria-label={isCorrect ? "つぎへ" : "とじる"}
-        >
-          {isCorrect ? "つぎへ" : "とじる"}
-        </button>
+        {!isCorrect ? (
+          <button
+            type="button"
+            className="relative z-20 mt-10 min-h-[3rem] w-full rounded-2xl bg-gradient-to-r from-red-600 to-rose-700 px-4 py-3 text-lg font-bold text-white shadow-lg ring-4 ring-red-300/50 active:scale-[0.98] sm:mt-12 sm:min-h-[3.25rem] sm:text-xl"
+            onClick={onClose}
+            aria-label="とじる"
+          >
+            とじる
+          </button>
+        ) : null}
       </div>
     </div>
   );
