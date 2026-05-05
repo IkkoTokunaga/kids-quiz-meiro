@@ -4,6 +4,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "せいかつマナー めいろ",
   description: "こども向け せいかつマナー 4せんたく クイズ",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export const viewport: Viewport = {
