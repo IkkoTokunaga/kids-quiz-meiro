@@ -5,7 +5,7 @@ import { Map } from "lucide-react";
 import type { QuizQuestionRaw, ShuffledRound } from "@/lib/quizTypes";
 import { CHOICE_PALETTE } from "@/lib/choicePalette";
 import { isCorrectAnswer, pickRandomQuestions, shuffleChoices } from "@/lib/quizLogic";
-import { advanceAfterCorrect } from "@/lib/quizSessionProgress";
+import { planMazeFeedbackClose } from "@/lib/mazeFeedbackClose";
 import { playCorrectChime, playWrongBuzz } from "@/lib/playFeedbackSounds";
 import { useChoiceTapGuard } from "@/lib/useChoiceTapGuard";
 import { PathTrack } from "./PathTrack";
@@ -126,9 +126,13 @@ export default function MannersMazeGame({ stage1, stage2, stage3 }: Props) {
   const { onTouchEnd, onClick } = useChoiceTapGuard(handlePick);
 
   const closeFeedback = useCallback(() => {
-    const wasCorrect = feedbackRef.current === "correct";
-    if (!wasCorrect) return;
-    const { next, goal } = advanceAfterCorrect(progressRef.current);
+    const plan = planMazeFeedbackClose(feedbackRef.current, progressRef.current);
+    if (plan.action === "noop") return;
+    if (plan.action === "clearWrongOverlay") {
+      setFeedback(null);
+      return;
+    }
+    const { next, goal } = plan;
     if (goal) {
       const s = playStageRef.current;
       if (s === 1) setPhase("stage1Complete");
